@@ -21,6 +21,8 @@ class IdbProductAttributeTemplateLine(models.Model):
     product_attribute_id = fields.Many2one('idb.product.attribute', string='属性')
     product_attribute_value_id = fields.Many2one('idb.product.attribute.value', string='属性')
 
+    # text commit
+
 
 class IdbProductAttributeLine(models.Model):
     _name = 'idb.product.attribute'
