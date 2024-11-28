@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <!--        样品管理menu-->
+        <menuitem id="menu_idb_basic_data"
+                  name="基础资料"
+                  sequence="1"
+                  web_icon="idb_basic_data,static/description/icon.png"/>
+
+
+    </data>
+</odoo>

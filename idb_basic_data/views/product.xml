@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <!--        产品资料-->
+        <menuitem id="menu_idb_basic_data_product"
+                  name="产品资料"
+                  parent="menu_idb_basic_data"
+                  sequence="1"/>
+
+        <record id="product_search_form_view202411221058" model="ir.ui.view">
+            <field name="name">product.product.search.stock.form</field>
+            <field name="model">product.product</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="categ_id" enable_counters="1"/>
+                    <searchpanel>
+                        <field name="categ_id" enable_counters="1"/>
+                    </searchpanel>
+                </search>
+            </field>
+        </record>
+
+        <record id="idb_product_action" model="ir.actions.act_window">
+            <field name="name">产品</field>
+            <field name="res_model">product.product</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="idb_basic_data.product_search_form_view202411221058"/>
+        </record>
+
+        <!--        产品-->
+        <menuitem id="menu_idb_basic_data_product_variant"
+                  name="产品"
+                  parent="menu_idb_basic_data_product"
+                  action="idb_basic_data.idb_product_action"
+                  sequence="1"/>
+    </data>
+</odoo>

@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_idb_product_attribute_template,idb_product_attribute_template,model_idb_product_attribute_template,,1,1,1,1
+access_idb_product_attribute_template_line,idb_product_attribute_template_line,model_idb_product_attribute_template_line,,1,1,1,1
+access_idb_product_attribute,idb_product_attribute,model_idb_product_attribute,,1,1,1,1
+access_idb_product_attribute_value,idb_product_attribute_value,model_idb_product_attribute_value,,1,1,1,1
+access_idb_create_product_template,idb_create_product_template,model_idb_create_product_template,,1,1,1,1
+access_idb_create_product_template_line,idb_create_product_template_line,model_idb_create_product_template_line,,1,1,1,1

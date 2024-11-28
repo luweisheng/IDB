@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+<!--        idb.product.attribute.line_form-->
+        <record id="idb_product_attribute_form" model="ir.ui.view">
+            <field name="name">idb.product.attributeform</field>
+            <field name="model">idb.product.attribute</field>
+            <field name="arch" type="xml">
+                <form string="属性">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <notebook>
+                            <page string="明细">
+                                <field name="value_line">
+                                    <tree editable="1">
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!--        idb_product_attribute_tree-->
+        <record id="idb_product_attribute_tree" model="ir.ui.view">
+            <field name="name">idb.product.attribute.tree</field>
+            <field name="model">idb.product.attribute</field>
+            <field name="arch" type="xml">
+                <tree string="属性">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--        idb_product_attribute_action-->
+        <record id="idb_product_attribute_action" model="ir.actions.act_window">
+            <field name="name">属性</field>
+            <field name="res_model">idb.product.attribute</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_idb_product_attribute"
+                  name="属性"
+                  parent="menu_idb_basic_data_product"
+                  action="idb_product_attribute_action"
+                  sequence="4"/>
+
+<!--        idb_product_attribute_template_tree-->
+        <record id="idb_product_attribute_template_tree" model="ir.ui.view">
+            <field name="name">idb.product.attribute.template.tree</field>
+            <field name="model">idb.product.attribute.template</field>
+            <field name="arch" type="xml">
+                <tree string="模板">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+<!--        idb_product_attribute_template_form-->
+        <record id="idb_product_attribute_template_form" model="ir.ui.view">
+            <field name="name">idb.product.attribute.template.form</field>
+            <field name="model">idb.product.attribute.template</field>
+            <field name="arch" type="xml">
+                <form string="模板">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <notebook>
+                            <page string="明细">
+                                <field name="product_attribute_line">
+                                    <tree editable="1">
+                                        <field name="product_attribute_id"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!--        idb_product_attribute_template_action-->
+        <record id="idb_product_attribute_template_action" model="ir.actions.act_window">
+            <field name="name">模板</field>
+            <field name="res_model">idb.product.attribute.template</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_idb_product_attribute_template"
+                  name="模板"
+                  parent="menu_idb_basic_data_product"
+                  action="idb_product_attribute_template_action"
+                  sequence="3"/>
+    </data>
+</odoo>

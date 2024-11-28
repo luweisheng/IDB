@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <!--        产品类别menu-->
+        <menuitem id="menu_idb_basic_data_product_category"
+                  name="类别"
+                  parent="menu_idb_basic_data_product"
+                  action="product.product_category_action_form"
+                  sequence="2"/>
+
+        <record id="product_category_form_view202411181634" model="ir.ui.view">
+            <field name="name">类别form</field>
+            <field name="model">product.category</field>
+            <field name="inherit_id" ref="product.product_category_form_view"/>
+            <field name="arch" type="xml">
+                <field name="parent_id" position="after">
+                    <field name="barcode"/>
+                    <field name="po_uom_id"/>
+                    <field name="uom_id"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>
