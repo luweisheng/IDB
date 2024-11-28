@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <data>
+        <record id="view_template_property_form202411281156" model="ir.ui.view">
+            <field name="name">product.template.stock.property.form.inherit</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook/page[@name='general_information']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//notebook/page[@name='general_information']" position="before">
+                    <page string="基本信息" name="idb_basic_information">
+                        <group col="4">
+                            <group>
+                                <field name="detailed_type"/>
+                                <field name="categ_id"/>
+                                <field name="barcode"/>
+                            </group>
+                            <group>
+                                <field name="uom_id"/>
+                                <field name="engineering_uom_id"/>
+                                <field name="engineering_coefficient"/>
+                            </group>
+                            <group>
+                                <field name="production_loss"/>
+                                <field name="purchase_loss"/>
+                                <field name="quote_loss"/>
+                            </group>
+                            <group>
+                                <field name="reference_price"/>
+                                <field name="reference_sale_price"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
         <!--        产品资料-->
         <menuitem id="menu_idb_basic_data_product"
                   name="产品资料"
