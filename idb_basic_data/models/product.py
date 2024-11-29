@@ -4,6 +4,13 @@ from odoo import models, fields, api, _
 from odoo.exceptions import UserError
 
 
+class ProductProduct(models.Model):
+    _inherit = 'product.product'
+
+    # 规格
+    specification = fields.Char(string='规格')
+
+
 class ProductTemplate(models.Model):
     _inherit = 'product.template'
 
@@ -22,3 +29,5 @@ class ProductTemplate(models.Model):
     reference_price = fields.Float(string='参考进价')
     # 参考售价
     reference_sale_price = fields.Float(string='参考售价')
+
+    detailed_type = fields.Selection(default='product')
