@@ -1,0 +1,2032 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* idb_basic_data
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 03:30+0000\n"
+"PO-Revision-Date: 2024-12-20 03:30+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__eco_count
+msgid "# ECOs"
+msgstr "# ECO"
+
+#. module: idb_basic_data
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.view_create_product_template_form
+msgid "/&gt;"
+msgstr "//&gt;"
+
+#. module: idb_basic_data
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.idb_mrp_bom_form_view
+msgid ""
+"A BoM of type Kit is not produced with a manufacturing order.\n"
+"                                <br/>\n"
+"                                Instead, it is used to decompose a BoM into its components when:"
+msgstr ""
+"套件类型的 BoM 不是通过制造订单生产的。\n"
+"<br/>\n"
+"相反，它用于在以下情况下将 BoM 分解为其组件："
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_product_product__detailed_type
+#: model:ir.model.fields,help:idb_basic_data.field_product_template__detailed_type
+msgid ""
+"A storable product is a product for which you manage stock. The Inventory app has to be installed.\n"
+"A consumable product is a product for which stock is not managed.\n"
+"A service is a non-material product you provide."
+msgstr ""
+"可储存产品是您管理库存的产品。必须安装库存应用程序。\n"
+"消耗品是未管理库存的产品。\n"
+"服务是您提供的非物质产品。"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__message_needaction
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__message_needaction
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__message_needaction
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__message_needaction
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__message_needaction
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__message_needaction
+msgid "Action Needed"
+msgstr "需要采取行动"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__activity_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__activity_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__activity_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__activity_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__activity_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__activity_ids
+msgid "Activities"
+msgstr "活动"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__activity_exception_decoration
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__activity_exception_decoration
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__activity_exception_decoration
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__activity_exception_decoration
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__activity_exception_decoration
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "活动异常装饰"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__activity_state
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__activity_state
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__activity_state
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__activity_state
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__activity_state
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__activity_state
+msgid "Activity State"
+msgstr "活动状态"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__activity_type_icon
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__activity_type_icon
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__activity_type_icon
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__activity_type_icon
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__activity_type_icon
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "活动类型图标"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__analytic_account_ids
+msgid "Analytic Account"
+msgstr "分析帐户"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__analytic_distribution
+msgid "Analytic Distribution"
+msgstr "分析分布"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__analytic_distribution_search
+msgid "Analytic Distribution Search"
+msgstr "分析分布搜索"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__analytic_distribution_text
+msgid "Analytic Distribution Text"
+msgstr "分析分布文本"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__analytic_precision
+msgid "Analytic Precision"
+msgstr "分析精度"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__bom_product_template_attribute_value_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__bom_product_template_attribute_value_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__bom_product_template_attribute_value_ids
+msgid "Apply on Variants"
+msgstr "应用于变体"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__message_attachment_count
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__message_attachment_count
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__message_attachment_count
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__message_attachment_count
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__message_attachment_count
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__message_attachment_count
+msgid "Attachment Count"
+msgstr "附件数量"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__attachments_count
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__attachments_count
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__attachments_count
+msgid "Attachments Count"
+msgstr "附件数量"
+
+#. module: idb_basic_data
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.view_create_product_template_form
+msgid "Attribute List"
+msgstr "属性列表"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_create_product_template__value_line
+msgid "Attribute detail"
+msgstr "属性详细信息"
+
+#. module: idb_basic_data
+#: model:ir.actions.act_window,name:idb_basic_data.idb_product_attribute_action
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.view_create_product_template_form
+msgid "Attributes"
+msgstr "属性"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_material_loss__loss_rate
+msgid "Attrition rate"
+msgstr "流失率"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom__produce_delay
+msgid ""
+"Average lead time in days to manufacture this product. In the case of multi-"
+"level BOM, the manufacturing lead times of the components will be added. In "
+"case the product is subcontracted, this can be used to determine the date at"
+" which components should be sent to the subcontractor."
+msgstr ""
+"制造该产品的平均交付周期（以天为单位）。如果是多级 "
+"BOM，则将添加组件的制造交付周期。如果产品是分包的，则可使用此信息来确定应将组件发送给分包商的日期。"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_color_configuration_bom__bom_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__bom_id
+msgid "BOM"
+msgstr "物料清单"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_idb_mrp_bom_color
+msgid "BOM Color table"
+msgstr "BOM颜色表"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom_line__bom_product_template_attribute_value_ids
+#: model:ir.model.fields,help:idb_basic_data.field_no_mrp_bom_line__bom_product_template_attribute_value_ids
+#: model:ir.model.fields,help:idb_basic_data.field_partial_detail_line__bom_product_template_attribute_value_ids
+msgid "BOM Product Variants needed to apply this line."
+msgstr "应用此行所需的 BOM 产品变体。"
+
+#. module: idb_basic_data
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.idb_mrp_bom_form_view
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.matching_color_bom_form_view
+msgid "BOM details"
+msgstr "物料清单详细信息"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__child_line_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__child_line_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__child_line_ids
+msgid "BOM lines of the referred bom"
+msgstr "所引用 bom 的 BOM 行"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_idb_mrp_bom_color_line
+msgid "BOM matching color indicates fine"
+msgstr "BOM匹配颜色指示良好"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_purchase_order_line__barcode
+msgid "Bar code"
+msgstr "条形码"
+
+#. module: idb_basic_data
+#: model:ir.ui.menu,name:idb_basic_data.menu_idb_basic_data
+msgid "Basic data"
+msgstr "基础数据"
+
+#. module: idb_basic_data
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.view_template_property_form202411281156
+msgid "Basic information"
+msgstr "基本信息"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_batch_modification_color_matching_materials_line
+msgid "Batch modification color matching material line"
+msgstr "批量修改配色料线"
+
+#. module: idb_basic_data
+#. odoo-python
+#: code:addons/idb_basic_data/models/mrp_bom.py:0
+#: model:ir.model,name:idb_basic_data.model_batch_modification_color_matching_materials
+#: model:ir.model.fields,field_description:idb_basic_data.field_batch_modification_color_matching_materials_line__batch_id
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.idb_mrp_bom_form_view
+#, python-format
+msgid "Batch modification of color matching materials"
+msgstr "配色材料批量修改"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__accessory_line_ids
+msgid "Batching detail"
+msgstr "配料细节"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_mrp_bom
+msgid "Bill of Material"
+msgstr "物料清单"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_mrp_bom_line
+msgid "Bill of Material Line"
+msgstr "物料清单行"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__bom_line_ids
+msgid "BoM Lines"
+msgstr "物料清单行"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__type
+msgid "BoM Type"
+msgstr "物料清单类型"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__width
+msgid "Breadth"
+msgstr "宽度"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__byproduct_ids
+msgid "By-products"
+msgstr "副产品"
+
+#. module: idb_basic_data
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.view_template_property_form202411281156
+msgid "Cancel"
+msgstr "取消"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__category_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__product_uom_category_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__product_uom_category_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__product_uom_category_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__product_uom_category_id
+msgid "Category"
+msgstr "类别"
+
+#. module: idb_basic_data
+#: model:ir.model.constraint,message:idb_basic_data.constraint_product_category_name_uniq
+msgid "Category name already exists, do not create!"
+msgstr "类别名称已存在，请勿创建！"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_product__category_barcode
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_template__category_barcode
+msgid "Class coding"
+msgstr "类别编码"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_res_partner__barcode
+msgid "Client number"
+msgstr "客户编号"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color_line__color_id
+msgid "Color"
+msgstr "颜色"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_idb_color_configuration_bom
+msgid "Color BOM configuration"
+msgstr "颜色BOM配置"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_matching_color_bom_line
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__color_bom_line_ids
+msgid "Color BOM details"
+msgstr "颜色BOM详细信息"
+
+#. module: idb_basic_data
+#: model:ir.actions.act_window,name:idb_basic_data.action_idb_product_color_scheme
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.idb_product_color_scheme_form
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.idb_product_color_scheme_tree
+msgid "Color Scheme Project"
+msgstr "配色方案项目"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__color_configuration
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom__color_configuration
+msgid "Color configuration"
+msgstr "颜色配置"
+
+#. module: idb_basic_data
+#: model:ir.ui.menu,name:idb_basic_data.idb_menu_product_color_data
+msgid "Color data"
+msgstr "颜色数据"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__color_line_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom__color_line_ids
+msgid "Color matching"
+msgstr "颜色匹配"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_matching_color_bom
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__matching_color_bom_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__matching_color_bom_id
+msgid "Color matching BOM"
+msgstr "配色BOM"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__color_line_ids
+msgid "Color matching detail"
+msgstr "配色细节"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__name
+msgid "Color name"
+msgstr "颜色名称"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__code
+msgid "Color numbering"
+msgstr "颜色编号"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__name
+msgid "Color project name"
+msgstr "颜色项目名称"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_idb_product_accessory_type
+#: model:ir.model.fields,field_description:idb_basic_data.field_batch_modification_color_matching_materials_line__accessory_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color_line__accessory_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__accessory_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom_line__accessory_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__accessory_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__accessory_id
+#: model:ir.ui.menu,name:idb_basic_data.idb_menu_product_color_scheme
+msgid "Color scheme"
+msgstr "配色方案"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color_line__bom_color_id
+msgid "Color scheme chart"
+msgstr "配色方案图"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_idb_product_color
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_color_configuration_bom__table
+msgid "Color table"
+msgstr "颜色表"
+
+#. module: idb_basic_data
+#. odoo-python
+#: code:addons/idb_basic_data/models/mrp_bom.py:0
+#, python-format
+msgid "Color table data error!"
+msgstr "颜色表数据错误！"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__color_id
+msgid "Colour"
+msgstr "颜色"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_idb_merge_bom_line
+msgid "Combined BOM material"
+msgstr "组合 BOM 物料"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__company_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__company_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__company_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__company_id
+msgid "Company"
+msgstr "公司"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__product_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom_line__product_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__product_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__product_id
+msgid "Component"
+msgstr "成分"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__operation_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__operation_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__operation_id
+msgid "Consumed in Operation"
+msgstr "运行中消耗"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_res_partner
+msgid "Contact"
+msgstr "接触"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom__product_uom_category_id
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom_line__product_uom_category_id
+#: model:ir.model.fields,help:idb_basic_data.field_no_mrp_bom_line__product_uom_category_id
+#: model:ir.model.fields,help:idb_basic_data.field_partial_detail_line__product_uom_category_id
+msgid ""
+"Conversion between Units of Measure can only occur if they belong to the "
+"same category. The conversion will be made based on the ratios."
+msgstr "只有属于同一类别的计量单位才能进行转换。转换将根据比率进行。"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__cost_price
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_product__cost_price
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_template__cost_price
+msgid "Cost price"
+msgstr "成本价"
+
+#. module: idb_basic_data
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.view_create_product_template_form
+msgid "Create Product"
+msgstr "创建产品"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_create_product_template_line__create_product_template_id
+msgid "Create Product Template"
+msgstr "创建产品模板"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_idb_create_product_template
+msgid "Create a Product Template"
+msgstr "创建产品模板"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom__days_to_prepare_mo
+msgid ""
+"Create and confirm Manufacturing Orders this many days in advance, to have enough time to replenish components or manufacture semi-finished products.\n"
+"Note that security lead times will also be considered when appropriate."
+msgstr ""
+"提前这么多天创建并确认制造订单，以便有足够的时间补充零部件或制造半成品。\n"
+"请注意，在适当的情况下，还会考虑安全交货时间。"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom__allow_operation_dependencies
+msgid ""
+"Create operation level dependencies that will influence both planning and "
+"the status of work orders upon MO confirmation. If this feature is ticked, "
+"and nothing is specified, Odoo will assume that all operations can be "
+"started simultaneously."
+msgstr "创建操作级别依赖关系，这将影响计划和 MO 确认后的工作订单状态。如果勾选此功能，但未指定任何内容，Odoo 将假定所有操作可以同时启动。"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_idb_create_product_template_line
+msgid "Create product template details"
+msgstr "创建产品模板详细信息"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_batch_modification_color_matching_materials__create_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_batch_modification_color_matching_materials_line__create_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_color_configuration_bom__create_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_create_product_template__create_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_create_product_template_line__create_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_material_loss__create_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_merge_bom_line__create_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__create_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color_line__create_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__create_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__create_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__create_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute__create_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_template__create_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_template_line__create_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_value__create_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__create_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__create_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__create_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__create_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_batch_modification_color_matching_materials__create_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_batch_modification_color_matching_materials_line__create_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_color_configuration_bom__create_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_create_product_template__create_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_create_product_template_line__create_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_material_loss__create_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_merge_bom_line__create_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__create_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color_line__create_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__create_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__create_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__create_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute__create_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_template__create_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_template_line__create_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_value__create_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__create_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__create_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__create_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__create_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__create_date
+msgid "Created on"
+msgstr "创建于"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__customer_number
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom__customer_number
+msgid "Customer account number"
+msgstr "客户帐号"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__customer_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom__customer_id
+msgid "Customer name"
+msgstr "客户名称"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_category__customs_code
+msgid "Customs code"
+msgstr "海关代码"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__knife_type
+msgid "Cutter type"
+msgstr "切刀类型"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__days_to_prepare_mo
+msgid "Days to prepare Manufacturing Order"
+msgstr "准备生产订单的天数"
+
+#. module: idb_basic_data
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.product_category_search_view202411181641
+msgid "Default category grouping"
+msgstr "默认类别分组"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom__consumption
+msgid ""
+"Defines if you can consume more or less components than the quantity defined on the BoM:\n"
+"  * Allowed: allowed for all manufacturing users.\n"
+"  * Allowed with warning: allowed for all manufacturing users with summary of consumption differences when closing the manufacturing order.\n"
+"  Note that in the case of component Manual Consumption, where consumption is registered manually exclusively, consumption warnings will still be issued when appropriate also.\n"
+"  * Blocked: only a manager can close a manufacturing order when the BoM consumption is not respected."
+msgstr ""
+"定义您是否可以消耗比 BoM 上定义的数量多或少的组件：\n"
+"* 允许：允许所有制造用户。\n"
+"* 允许并发出警告：允许所有制造用户在关闭制造订单时提供消耗差异摘要。\n"
+"请注意，在组件手动消耗的情况下，消耗仅通过手动方式登记，在适当的情况下仍会发出消耗警告。\n"
+"* 阻止：只有经理在未遵守 BoM 消耗时才能关闭制造订单。"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_purchase_order__delivery_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_purchase_order_line__delivery_date
+msgid "Delivery date"
+msgstr "交货日期"
+
+#. module: idb_basic_data
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.idb_product_attribute_form
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.idb_product_attribute_template_form
+msgid "Details"
+msgstr "细节"
+
+#. module: idb_basic_data
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__product_template__state__obsolete
+msgid "Die out"
+msgstr "消亡"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_batch_modification_color_matching_materials__display_name
+#: model:ir.model.fields,field_description:idb_basic_data.field_batch_modification_color_matching_materials_line__display_name
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_color_configuration_bom__display_name
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_create_product_template__display_name
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_create_product_template_line__display_name
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_material_loss__display_name
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_merge_bom_line__display_name
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__display_name
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color_line__display_name
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__display_name
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__display_name
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__display_name
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute__display_name
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_template__display_name
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_template_line__display_name
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_value__display_name
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__display_name
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__display_name
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__display_name
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__display_name
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__sequence
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__sequence
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom_line__sequence
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__sequence
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__sequence
+msgid "Display sequence"
+msgstr "显示顺序"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__eco_ids
+msgid "ECO to be applied"
+msgstr "适用 ECO"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__material_length
+msgid "Effective length"
+msgstr "有效长度"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__material_width
+msgid "Effective width"
+msgstr "有效宽度"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_material_loss__end_qty
+msgid "End quantity"
+msgstr "最终数量"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__engineering_coefficient
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom_line__engineering_coefficient
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__engineering_coefficient
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__engineering_coefficient
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_product__engineering_coefficient
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_template__engineering_coefficient
+msgid "Engineering coefficient"
+msgstr "工程系数"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__engineering_uom_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom_line__engineering_uom_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__engineering_uom_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__engineering_uom_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_category__eng_uom_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_product__engineering_uom_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_template__engineering_uom_id
+msgid "Engineering unit"
+msgstr "工程单位"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__engineering_quantity
+msgid "Engineering unit consumption"
+msgstr "工程单耗"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__en_name
+msgid "English color"
+msgstr "英伦色彩"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom_line__tracking
+#: model:ir.model.fields,help:idb_basic_data.field_no_mrp_bom_line__tracking
+#: model:ir.model.fields,help:idb_basic_data.field_partial_detail_line__tracking
+msgid "Ensure the traceability of a storable product in your warehouse."
+msgstr "确保仓库中可存储产品的可追溯性。"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__estimate_quantity
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom__estimate_quantity
+msgid "Estimated quantity"
+msgstr "预估数量"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__factory_number
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom__factory_number
+msgid "Factory model number"
+msgstr "工厂型号"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__consumption
+msgid "Flexible Consumption"
+msgstr "灵活消费"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__message_follower_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__message_follower_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__message_follower_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__message_follower_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__message_follower_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__message_follower_ids
+msgid "Followers"
+msgstr "关注者"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__message_partner_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__message_partner_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__message_partner_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__message_partner_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__message_partner_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "追随者（合作伙伴）"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_idb_mrp_bom_color__activity_type_icon
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory__activity_type_icon
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory_line__activity_type_icon
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory_type__activity_type_icon
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_color__activity_type_icon
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Font awesome 图标，例如 fa-tasks"
+
+#. module: idb_basic_data
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__purchase_order__idb_purchase_type__normal
+msgid "General stores purchasing"
+msgstr "一般商店采购"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom_line__sequence
+#: model:ir.model.fields,help:idb_basic_data.field_mrp_bom_line__sequence
+#: model:ir.model.fields,help:idb_basic_data.field_no_mrp_bom_line__sequence
+#: model:ir.model.fields,help:idb_basic_data.field_partial_detail_line__sequence
+msgid "Gives the sequence order when displaying."
+msgstr "给出显示时的序列顺序。"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__grid_number
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom__grid_number
+msgid "Grid number"
+msgstr ""
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__has_message
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__has_message
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__has_message
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__has_message
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__has_message
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__has_message
+msgid "Has Message"
+msgstr "有留言"
+
+#. module: idb_basic_data
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__matching_color_bom_line__part_selection__yes
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__mrp_bom_line__part_selection__yes
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__no_mrp_bom_line__part_selection__yes
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__partial_detail_line__part_selection__yes
+msgid "Have parts"
+msgstr "有零件"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_batch_modification_color_matching_materials__id
+#: model:ir.model.fields,field_description:idb_basic_data.field_batch_modification_color_matching_materials_line__id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_color_configuration_bom__id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_create_product_template__id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_create_product_template_line__id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_material_loss__id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_merge_bom_line__id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color_line__id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute__id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_template__id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_template_line__id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_value__id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__id
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__id
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__id
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__id
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__activity_exception_icon
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__activity_exception_icon
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__activity_exception_icon
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__activity_exception_icon
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__activity_exception_icon
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__activity_exception_icon
+msgid "Icon"
+msgstr "图标"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_idb_mrp_bom_color__activity_exception_icon
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory__activity_exception_icon
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory_line__activity_exception_icon
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory_type__activity_exception_icon
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_color__activity_exception_icon
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "表示异常活动的图标。"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom__product_id
+msgid ""
+"If a product variant is defined the BOM is available only for this product."
+msgstr "如果定义了产品变体，则 BOM 仅适用于该产品。"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_idb_mrp_bom_color__message_needaction
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory__message_needaction
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory_line__message_needaction
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory_type__message_needaction
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_color__message_needaction
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "如果选中，则表示有新消息需要您关注。"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_idb_mrp_bom_color__message_has_error
+#: model:ir.model.fields,help:idb_basic_data.field_idb_mrp_bom_color__message_has_sms_error
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory__message_has_error
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory__message_has_sms_error
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory_line__message_has_error
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory_line__message_has_sms_error
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory_type__message_has_error
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory_type__message_has_sms_error
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_color__message_has_error
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_color__message_has_sms_error
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom__message_has_error
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "如果选中，则某些消息会出现传送错误。"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__image_128
+msgid "Image 128"
+msgstr "图片 128"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__image1
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom__image1
+msgid "Image1"
+msgstr "图片1"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__image2
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom__image2
+msgid "Image2"
+msgstr "图片2"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__image3
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom__image3
+msgid "Image3"
+msgstr "图片3"
+
+#. module: idb_basic_data
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.product_accessory_form
+msgid "Ingredients List"
+msgstr "配料表"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_material_loss__start_qty
+msgid "Initial quantity"
+msgstr "初始数量"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom__barcode
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom_line__barcode
+#: model:ir.model.fields,help:idb_basic_data.field_mrp_bom__barcode
+#: model:ir.model.fields,help:idb_basic_data.field_mrp_bom_line__barcode
+#: model:ir.model.fields,help:idb_basic_data.field_no_mrp_bom_line__barcode
+#: model:ir.model.fields,help:idb_basic_data.field_partial_detail_line__barcode
+#: model:ir.model.fields,help:idb_basic_data.field_purchase_order_line__barcode
+msgid "International Article Number used for product identification."
+msgstr "用于产品识别的国际商品编号。"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__stock_knife_use
+msgid "Inventory unit row usage"
+msgstr "排刀用量"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__stock_quantity
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__production_quantity
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__partial_detail_stock_use
+msgid "Inventory unit usage"
+msgstr "库存单位用量"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__message_is_follower
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__message_is_follower
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__message_is_follower
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__message_is_follower
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__message_is_follower
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__message_is_follower
+msgid "Is Follower"
+msgstr "是追随者"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_batch_modification_color_matching_materials__write_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_batch_modification_color_matching_materials_line__write_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_color_configuration_bom__write_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_create_product_template__write_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_create_product_template_line__write_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_material_loss__write_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_merge_bom_line__write_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__write_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color_line__write_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__write_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__write_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__write_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute__write_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_template__write_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_template_line__write_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_value__write_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__write_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__write_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__write_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__write_uid
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__write_uid
+msgid "Last Updated by"
+msgstr "最后更新者"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_batch_modification_color_matching_materials__write_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_batch_modification_color_matching_materials_line__write_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_color_configuration_bom__write_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_create_product_template__write_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_create_product_template_line__write_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_material_loss__write_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_merge_bom_line__write_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__write_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color_line__write_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__write_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__write_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__write_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute__write_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_template__write_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_template_line__write_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_value__write_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__write_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__write_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__write_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__write_date
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__write_date
+msgid "Last Updated on"
+msgstr "最后更新于"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__length
+msgid "Length"
+msgstr "长度"
+
+#. module: idb_basic_data
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.idb_mrp_bom_form_view
+msgid "Location-free data"
+msgstr "不受位置限制的数据"
+
+#. module: idb_basic_data
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__purchase_order__idb_purchase_type__main
+msgid "Main material purchase"
+msgstr "主要材料采购"
+
+#. module: idb_basic_data
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__partial_detail_line__process_type__sew
+msgid "Make up"
+msgstr "化妆品"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__manual_consumption
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__manual_consumption
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__manual_consumption
+msgid "Manual Consumption"
+msgstr "手动消耗"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__manual_consumption_readonly
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__manual_consumption_readonly
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__manual_consumption_readonly
+msgid "Manual Consumption Readonly"
+msgstr "手动消费只读"
+
+#. module: idb_basic_data
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__purchase_order__idb_purchase_type__manual_operation
+msgid "Manual operation"
+msgstr "手动操作"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__produce_delay
+msgid "Manufacturing Lead Time"
+msgstr "制造交付周期"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__ready_to_produce
+msgid "Manufacturing Readiness"
+msgstr "生产准备"
+
+#. module: idb_basic_data
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.matching_color_bom_form_view
+msgid "Matching Color BOM"
+msgstr "匹配颜色物料清单"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__match_sequence
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom_line__match_sequence
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__match_sequence
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__match_sequence
+msgid "Matching sequence"
+msgstr "匹配序列"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__count_material
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom_line__count_material
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__count_material
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__count_material
+msgid "Material count"
+msgstr "材料数量"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_idb_material_loss
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_category__material_loss_ids
+msgid "Material loss schedule"
+msgstr "物料损失明细表"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__code
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__barcode
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom_line__barcode
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__barcode
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__barcode
+msgid "Material number"
+msgstr "物料编号"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_batch_modification_color_matching_materials__materials_line_ids
+msgid "Material store"
+msgstr "材料店"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__material_type
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom_line__material_type
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__material_type
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__material_type
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_product__material_type
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_template__material_type
+msgid "Material type"
+msgstr "材质类型"
+
+#. module: idb_basic_data
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__product_template__material_type__materials
+msgid "Materials"
+msgstr "材料"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__message_has_error
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__message_has_error
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__message_has_error
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__message_has_error
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__message_has_error
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__message_has_error
+msgid "Message Delivery error"
+msgstr "消息传递错误"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__message_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__message_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__message_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__message_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__message_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__message_ids
+msgid "Messages"
+msgstr "消息"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__factory_version
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom__factory_version
+msgid "Model number version"
+msgstr "型号 版本"
+
+#. module: idb_basic_data
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.batch_modification_color_matching_materials_form_view
+msgid "Modify"
+msgstr "调整"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__my_activity_date_deadline
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__my_activity_date_deadline
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__my_activity_date_deadline
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__my_activity_date_deadline
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__my_activity_date_deadline
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "我的活动截止日期"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_create_product_template__name
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_create_product_template_line__name
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_merge_bom_line__name
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__name
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__name
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute__name
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_template__name
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_value__name
+msgid "Name"
+msgstr "姓名"
+
+#. module: idb_basic_data
+#. odoo-python
+#: code:addons/idb_basic_data/models/mrp_bom.py:0
+#: code:addons/idb_basic_data/models/mrp_bom.py:0
+#, python-format
+msgid "New"
+msgstr "新的"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__activity_calendar_event_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__activity_calendar_event_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__activity_calendar_event_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__activity_calendar_event_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__activity_calendar_event_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "下一个活动日历事件"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__activity_date_deadline
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__activity_date_deadline
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__activity_date_deadline
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__activity_date_deadline
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__activity_date_deadline
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "下一活动截止日期"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__activity_summary
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__activity_summary
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__activity_summary
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__activity_summary
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__activity_summary
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__activity_summary
+msgid "Next Activity Summary"
+msgstr "下一活动摘要"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__activity_type_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__activity_type_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__activity_type_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__activity_type_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__activity_type_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__activity_type_id
+msgid "Next Activity Type"
+msgstr "下一个活动类型"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_no_mrp_bom_line
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__no_bom_line_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom__no_bom_line_ids
+msgid "No BOM material is available"
+msgstr "无可用的 BOM 物料"
+
+#. module: idb_basic_data
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__partial_detail_line__knife_type__draft
+msgid "No automatic cutting"
+msgstr "无自动切割"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__message_needaction_counter
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__message_needaction_counter
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__message_needaction_counter
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__message_needaction_counter
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__message_needaction_counter
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__message_needaction_counter
+msgid "Number of Actions"
+msgstr "动作数量"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__knife_count
+msgid "Number of cuts"
+msgstr "切割次数"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__message_has_error_counter
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__message_has_error_counter
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__message_has_error_counter
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__message_has_error_counter
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__message_has_error_counter
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__message_has_error_counter
+msgid "Number of errors"
+msgstr "错误数量"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_idb_mrp_bom_color__message_needaction_counter
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory__message_needaction_counter
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory_line__message_needaction_counter
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory_type__message_needaction_counter
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_color__message_needaction_counter
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "需要采取行动的消息数量"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_idb_mrp_bom_color__message_has_error_counter
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory__message_has_error_counter
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory_line__message_has_error_counter
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory_type__message_has_error_counter
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_color__message_has_error_counter
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__allow_operation_dependencies
+msgid "Operation Dependencies"
+msgstr "操作依赖关系"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__picking_type_id
+msgid "Operation Type"
+msgstr "操作类型"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__operation_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__allowed_operation_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__allowed_operation_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__allowed_operation_ids
+msgid "Operations"
+msgstr "运营"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_product__state
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_template__state
+msgid "PLM status"
+msgstr "PLM 状态"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__bom_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__bom_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__bom_id
+msgid "Parent BoM"
+msgstr "父级 BoM"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__parent_product_tmpl_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__parent_product_tmpl_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__parent_product_tmpl_id
+msgid "Parent Product Template"
+msgstr "父产品模板"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_partial_detail_line
+msgid "Part detail BOM material"
+msgstr "零件详细信息 BOM 材料"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__part_selection
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom_line__part_selection
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__part_selection
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__part_selection
+msgid "Part/no part"
+msgstr "部分/无部分"
+
+#. module: idb_basic_data
+#. odoo-python
+#: code:addons/idb_basic_data/models/mrp_bom.py:0
+#, python-format
+msgid "Please set the color chart first!"
+msgstr "请先设置颜色表！"
+
+#. module: idb_basic_data
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.idb_mrp_bom_form_view
+msgid "Position data"
+msgstr "位置数据"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__partial_detail_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom__partial_detail_ids
+msgid "Position detail"
+msgstr "职位详细信息"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__possible_product_template_attribute_value_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__possible_bom_product_template_attribute_value_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__possible_bom_product_template_attribute_value_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__possible_bom_product_template_attribute_value_ids
+msgid "Possible Product Template Attribute Value"
+msgstr "可能的产品模板属性值"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__previous_bom_id
+msgid "Previous BoM"
+msgstr "上一个 BoM"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__process_type
+msgid "Processing type"
+msgstr "加工类型"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_product__purchase_loss
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_template__purchase_loss
+msgid "Procurement loss"
+msgstr "采购损失"
+
+#. module: idb_basic_data
+#: model:ir.actions.act_window,name:idb_basic_data.idb_product_action
+#: model:ir.model,name:idb_basic_data.model_product_template
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__product_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__product_tmpl_id
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.view_create_product_template_form
+msgid "Product"
+msgstr "产品"
+
+#. module: idb_basic_data
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.product_accessory_form
+msgid "Product Accessories"
+msgstr "产品配件"
+
+#. module: idb_basic_data
+#: model:ir.actions.act_window,name:idb_basic_data.action_idb_bom
+msgid "Product BOM"
+msgstr "产品物料清单"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_product_category
+msgid "Product Category"
+msgstr "产品类别"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__product_tmpl_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__product_tmpl_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__product_tmpl_id
+msgid "Product Template"
+msgstr "产品模板"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_product__detailed_type
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_template__detailed_type
+msgid "Product Type"
+msgstr "产品类型"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__product_uom_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom_line__product_uom_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__product_uom_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__product_uom_id
+msgid "Product Unit of Measure"
+msgstr "产品计量单位"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_product_product
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__product_id
+msgid "Product Variant"
+msgstr "产品变体"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_idb_product_accessory
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__accessory_id
+msgid "Product accessories"
+msgstr "产品配件"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_idb_product_accessory_line
+msgid "Product accessories details"
+msgstr "产品配件详情"
+
+#. module: idb_basic_data
+#: model:ir.ui.menu,name:idb_basic_data.menu_idb_product_attribute
+msgid "Product attribute"
+msgstr "产品属性"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_create_product_template__category_id
+#: model:ir.ui.menu,name:idb_basic_data.menu_idb_basic_data_product_category
+msgid "Product category"
+msgstr "产品类别"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_material_loss__category_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__category_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom__category_id
+msgid "Product classification"
+msgstr "产品分类"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__color_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__match_color_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom__match_color_id
+msgid "Product color matching"
+msgstr "产品配色"
+
+#. module: idb_basic_data
+#: model:ir.ui.menu,name:idb_basic_data.menu_idb_basic_data_product_variant
+msgid "Product data"
+msgstr "产品数据"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__main_color_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__main_color_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__main_color_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom__main_color_id
+msgid "Product main color"
+msgstr "产品主色"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__material_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom__material_id
+msgid "Product material"
+msgstr "产品材质"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__barcode
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom__barcode
+msgid "Product number"
+msgstr "产品编号"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_idb_product_attribute_template
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_create_product_template__product_attribute_template_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_template_line__product_attribute_template_id
+msgid "Product standardization template"
+msgstr "产品模板"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__main_product_id
+msgid "Product staple"
+msgstr "主料"
+
+#. module: idb_basic_data
+#: model:ir.ui.menu,name:idb_basic_data.menu_idb_product_attribute_template
+msgid "Product template"
+msgstr "产品模板"
+
+#. module: idb_basic_data
+#: model:ir.ui.menu,name:idb_basic_data.menu_idb_basic_data_product_uom
+msgid "Product unit"
+msgstr "产品单位"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__active
+msgid "Production Ready"
+msgstr "生产就绪"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__production_add_loss
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom_line__production_add_loss
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__production_add_loss
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__production_add_loss
+msgid "Production increase loss"
+msgstr "生产增加损耗"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__production_loss
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_product__production_loss
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_template__production_loss
+msgid "Production loss"
+msgstr "生产损失"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__color_production_quantity
+msgid "Production volume"
+msgstr "生产量"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_purchase_order
+msgid "Purchase Order"
+msgstr "采购订单"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "采购订单行"
+
+#. module: idb_basic_data
+#: model:ir.actions.act_window,name:idb_basic_data.action_idb_purchase_order_line
+#: model:ir.ui.menu,name:idb_basic_data.menu_idb_purchase_order_line
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.idb_purchase_order_line_tree
+msgid "Purchase details"
+msgstr "购买详情"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_create_product_template__po_uom_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_category__po_uom_id
+msgid "Purchasing unit"
+msgstr "采购单位"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__product_qty
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__product_qty
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom_line__product_qty
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__product_qty
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__product_qty
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.idb_mrp_bom_form_view
+msgid "Quantity"
+msgstr "数量"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__quote_loss
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_product__quote_loss
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_template__quote_loss
+msgid "Quotation loss"
+msgstr "报价损失"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__quote_amount
+msgid "Quoted amount"
+msgstr "报价金额"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__quote_quantity
+msgid "Quoted dosage"
+msgstr "报价用量"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__quote_price
+msgid "Quoted unit price"
+msgstr "报价单价"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__rating_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__rating_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__rating_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__rating_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__rating_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__rating_ids
+msgid "Ratings"
+msgstr "评级"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__code
+msgid "Reference"
+msgstr "参考"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__reference_price
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_product__reference_price
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_template__reference_price
+msgid "Reference purchase price"
+msgstr "参考进价"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__reference_sale_price
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_product__reference_sale_price
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_template__reference_sale_price
+msgid "Reference selling price"
+msgstr "参考售价"
+
+#. module: idb_basic_data
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.idb_mrp_bom_form_view
+msgid "Refresh BOM details"
+msgstr "刷新BOM详细信息"
+
+#. module: idb_basic_data
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.matching_color_bom_form_view
+msgid "Refresh Color Details BOM"
+msgstr "刷新颜色BOM详细信息"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__residue_length
+msgid "Residual length"
+msgstr "余料长度"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__activity_user_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__activity_user_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__activity_user_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__activity_user_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__activity_user_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__activity_user_id
+msgid "Responsible User"
+msgstr "负责人"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__message_has_sms_error
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__message_has_sms_error
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__message_has_sms_error
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__message_has_sms_error
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__message_has_sms_error
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "短信发送错误"
+
+#. module: idb_basic_data
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__purchase_order__idb_purchase_type__sale
+msgid "Sales order"
+msgstr "销售订单"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__sequence
+msgid "Sequence"
+msgstr "顺序"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_material_loss__sequence
+msgid "Serial number"
+msgstr "序列号"
+
+#. module: idb_basic_data
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.product_category_form_view202411181634
+msgid "Sorting loss"
+msgstr "分拣损失"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__residue_width
+msgid "Spare material width"
+msgstr "余料宽幅"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_idb_product_attribute
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_create_product_template_line__product_attribute_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_template_line__product_attribute_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_value__product_attribute_id
+msgid "Stats"
+msgstr "统计资料"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_idb_product_attribute_value
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute__value_line
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_template_line__product_attribute_value_id
+msgid "Stats Value"
+msgstr "统计值"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_idb_mrp_bom_color__activity_state
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory__activity_state
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory_line__activity_state
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory_type__activity_state
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_color__activity_state
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"根据活动的状态\n"
+"逾期：已过截止日期\n"
+"今日：活动日期为今日\n"
+"计划：未来活动。"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_create_product_template__uom_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_category__uom_id
+msgid "Stock keeping unit"
+msgstr "库存单位"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__child_bom_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__child_bom_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__child_bom_id
+msgid "Sub BoM"
+msgstr "子 BoM"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__table_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom__table_data
+msgid "Table Data"
+msgstr "表数据"
+
+#. module: idb_basic_data
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.view_template_property_form202411281156
+msgid "Take it to the next level"
+msgstr "进入下一阶段"
+
+#. module: idb_basic_data
+#: model:ir.actions.act_window,name:idb_basic_data.idb_product_attribute_template_action
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.idb_product_attribute_template_form
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.idb_product_attribute_template_tree
+msgid "Template"
+msgstr "模板"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_template__product_attribute_line
+msgid "Template detail"
+msgstr "模板详细信息"
+
+#. module: idb_basic_data
+#. odoo-python
+#: code:addons/idb_basic_data/models/mrp_bom.py:0
+#, python-format
+msgid ""
+"The color matching item has been modified, please reset the color table!"
+msgstr "配色项已修改，请重新设置颜色表！"
+
+#. module: idb_basic_data
+#: model:ir.model.constraint,message:idb_basic_data.constraint_product_template_name_uniq
+msgid "The material name must be unique！"
+msgstr "物料名称必须是唯一的！"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom_line__operation_id
+#: model:ir.model.fields,help:idb_basic_data.field_no_mrp_bom_line__operation_id
+#: model:ir.model.fields,help:idb_basic_data.field_partial_detail_line__operation_id
+msgid ""
+"The operation where the components are consumed, or the finished products "
+"created."
+msgstr "消耗零部件或生产成品的操作。"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom__product_qty
+msgid ""
+"This should be the smallest quantity that this product can be produced in. "
+"If the BOM contains operations, make sure the work center capacity is "
+"accurate."
+msgstr "这应该是该产品可以生产的最小数量。如果 BOM 包含工序，请确保工作中心容量准确。"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__knife_use
+msgid "Tooling usage"
+msgstr "工具使用"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__tracking
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__tracking
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__tracking
+msgid "Tracking"
+msgstr "追踪"
+
+#. module: idb_basic_data
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__partial_detail_line__knife_type__double
+msgid "Transverse exclusion length"
+msgstr "横排除长"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_purchase_order__idb_purchase_type
+msgid "Type of purchase"
+msgstr "购买类型"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_idb_mrp_bom_color__activity_exception_decoration
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory__activity_exception_decoration
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory_line__activity_exception_decoration
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory_type__activity_exception_decoration
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_color__activity_exception_decoration
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "记录中的异常活动的类型。"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__product_uom_id
+msgid "Unit of Measure"
+msgstr "计量单位"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom__product_uom_id
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom_line__product_uom_id
+#: model:ir.model.fields,help:idb_basic_data.field_mrp_bom_line__product_uom_id
+#: model:ir.model.fields,help:idb_basic_data.field_no_mrp_bom_line__product_uom_id
+#: model:ir.model.fields,help:idb_basic_data.field_partial_detail_line__product_uom_id
+msgid ""
+"Unit of Measure (Unit of Measure) is the unit of measurement for the "
+"inventory control"
+msgstr "计量单位（Unit of Measure）是库存控制的计量单位"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_res_partner__barcode
+msgid "Use a barcode to identify this contact."
+msgstr "使用条形码识别此联系人。"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_create_product_template_line__product_attribute_value_id
+msgid "Value"
+msgstr "价值"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__version
+msgid "Version"
+msgstr "版本"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color__website_message_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory__website_message_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_line__website_message_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__website_message_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__website_message_ids
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__website_message_ids
+msgid "Website Messages"
+msgstr "网站留言"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_idb_mrp_bom_color__website_message_ids
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory__website_message_ids
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory_line__website_message_ids
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_accessory_type__website_message_ids
+#: model:ir.model.fields,help:idb_basic_data.field_idb_product_color__website_message_ids
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom__website_message_ids
+msgid "Website communication history"
+msgstr "网站通讯历史"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom__picking_type_id
+msgid ""
+"When a procurement has a ‘produce’ route with a operation type set, it will "
+"try to create a Manufacturing Order for that product using a BoM of the same"
+" operation type. That allows to define stock rules which trigger different "
+"manufacturing orders with different BoMs."
+msgstr ""
+"当采购具有设置了操作类型的“生产”路线时，它将尝试使用相同操作类型的 BoM 为该产品创建制造订单。这允许定义触发具有不同 BoM "
+"的不同制造订单的库存规则。"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,help:idb_basic_data.field_matching_color_bom_line__manual_consumption
+#: model:ir.model.fields,help:idb_basic_data.field_no_mrp_bom_line__manual_consumption
+#: model:ir.model.fields,help:idb_basic_data.field_partial_detail_line__manual_consumption
+msgid ""
+"When activated, then the registration of consumption for that component is recorded manually exclusively.\n"
+"If not activated, and any of the components consumption is edited manually on the manufacturing order, Odoo assumes manual consumption also."
+msgstr ""
+"激活后，该组件的消耗登记将完全手动记录。\n"
+"如果未激活，且在制造订单上手动编辑任何组件消耗，Odoo 也会假定手动消耗。"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_purchase_order_line__category_id
+msgid "category"
+msgstr "类别"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__check
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom_line__check
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__check
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__check
+msgid "collate"
+msgstr "校对"
+
+#. module: idb_basic_data
+#: model:ir.actions.act_window,name:idb_basic_data.action_product_color
+#: model:ir.model.fields,field_description:idb_basic_data.field_batch_modification_color_matching_materials_line__color_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__color_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom_line__color_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__color_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__color_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_product__color_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_template__color_id
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.idb_product_color_form
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.idb_product_color_tree
+msgid "colour"
+msgstr "颜色"
+
+#. module: idb_basic_data
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__product_template__state__draft
+msgid "concept"
+msgstr "概念"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_accessory_type__code
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_category__barcode
+msgid "encoding"
+msgstr "编码"
+
+#. module: idb_basic_data
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__product_template__state__development
+msgid "exploit"
+msgstr "开发"
+
+#. module: idb_basic_data
+#: model:ir.model,name:idb_basic_data.model_idb_product_attribute_template_line
+msgid "idb.product.attribute.template.line"
+msgstr "idb.产品.属性.模板.行"
+
+#. module: idb_basic_data
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__product_template__state__sustaining
+msgid "improvement"
+msgstr "改进"
+
+#. module: idb_basic_data
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.idb_mrp_bom_form_view
+msgid "it is added as a component in a manufacturing order"
+msgstr "它被添加为制造订单中的一个组件"
+
+#. module: idb_basic_data
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.idb_mrp_bom_form_view
+msgid ""
+"it is moved via a transfer, such as a receipt or a delivery order for "
+"instance."
+msgstr "它是通过转移来移动的，例如收据或交货单。"
+
+#. module: idb_basic_data
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__product_template__material_type__material
+msgid "material"
+msgstr "材料"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_batch_modification_color_matching_materials_line__product_id
+msgid "materiel"
+msgstr "物料"
+
+#. module: idb_basic_data
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__matching_color_bom_line__fit_type__single
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__mrp_bom_line__fit_type__single
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__no_mrp_bom_line__fit_type__single
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__partial_detail_line__fit_type__single
+msgid "monolayer"
+msgstr "单层"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_batch_modification_color_matching_materials__name
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_color_configuration_bom__name
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom__name
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom__name
+msgid "name"
+msgstr "姓名"
+
+#. module: idb_basic_data
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__partial_detail_line__process_type__package
+msgid "package"
+msgstr "包裹"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__position
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom_line__position
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__position
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__position
+msgid "position"
+msgstr "位置"
+
+#. module: idb_basic_data
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__matching_color_bom_line__part_selection__no
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__mrp_bom_line__part_selection__no
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__no_mrp_bom_line__part_selection__no
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__partial_detail_line__part_selection__no
+msgid "positionless"
+msgstr "无位置"
+
+#. module: idb_basic_data
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__product_template__state__release
+msgid "publish"
+msgstr "发布"
+
+#. module: idb_basic_data
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__matching_color_bom_line__fit_type__composite
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__mrp_bom_line__fit_type__composite
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__no_mrp_bom_line__fit_type__composite
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__partial_detail_line__fit_type__composite
+msgid "recombination"
+msgstr "重组"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_color__note
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__note
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom_line__note
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__note
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__note
+msgid "remark"
+msgstr "评论"
+
+#. module: idb_basic_data
+#: model_terms:ir.ui.view,arch_db:idb_basic_data.product_category_search_view202411181641
+msgid "sort"
+msgstr "种类"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__specification
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom_line__specification
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__specification
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__specification
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_product__specification
+#: model:ir.model.fields,field_description:idb_basic_data.field_product_template__specification
+msgid "specification"
+msgstr "规格"
+
+#. module: idb_basic_data
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__partial_detail_line__process_type__cut
+msgid "tailor"
+msgstr "裁缝"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__fit_type
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom_line__fit_type
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__fit_type
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__fit_type
+msgid "type"
+msgstr "类型"
+
+#. module: idb_basic_data
+#: model:ir.model.fields.selection,name:idb_basic_data.selection__product_template__state__validation
+msgid "verify"
+msgstr "核实"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_idb_product_attribute_template_line__name
+msgid "Name"
+msgstr "名称"
+
+#. module: idb_basic_data
+#: model:ir.model.fields,field_description:idb_basic_data.field_matching_color_bom_line__category_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_mrp_bom_line__category_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_no_mrp_bom_line__category_id
+#: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__category_id
+msgid "Category"
+msgstr "类别"
+
+#. module: idb_basic_data
+#: model_terms:ir.actions.act_window,help:idb_basic_data.action_product_color
+msgid "Color"
+msgstr "颜色"

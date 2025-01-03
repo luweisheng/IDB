@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+
+        <record id="idb_product_color_scheme_tree" model="ir.ui.view">
+            <field name="name">idb.product.accessory.type.tree</field>
+            <field name="model">idb.product.accessory.type</field>
+            <field name="arch" type="xml">
+                <tree string="Color Scheme Project">
+                    <field name="name"/>
+                    <field name="sequence"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="idb_product_color_scheme_form" model="ir.ui.view">
+            <field name="name">idb.product.accessory.type.form</field>
+            <field name="model">idb.product.accessory.type</field>
+            <field name="arch" type="xml">
+                <form string="Color Scheme Project">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="sequence"/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_idb_product_color_scheme" model="ir.actions.act_window">
+            <field name="name">Color Scheme Project</field>
+            <field name="res_model">idb.product.accessory.type</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+<!--        <menuitem id="idb_menu_product_color_scheme"-->
+<!--                  name="Color Scheme Project"-->
+<!--                  parent="menu_idb_basic_data"-->
+<!--                  action="action_idb_product_color_scheme"-->
+<!--                  sequence="3"/>-->
+
+    </data>
+</odoo>

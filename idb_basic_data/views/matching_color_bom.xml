@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="matching_color_bom_form_view" model="ir.ui.view">
+            <field name="name">matching.color.bom.form.view</field>
+            <field name="model">matching.color.bom</field>
+            <field name="arch" type="xml">
+                <form string="Matching Color BOM">
+                    <header>
+                        <button name="update_matching_color_bom" string="Refresh Color Details BOM" type="object"
+                                class="btn-primary"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <div class="d-flex">
+                                    <field class="text-break" name="name" widget="text"
+                                           readonly="True" force_save="1"/>
+                                </div>
+                            </h1>
+                        </div>
+                        <group col="4">
+                            <group>
+                                <field name="company_id" invisible="1"/>
+                                <field name="customer_id"/>
+                                <field name="customer_number"/>
+                                <field name="main_color_id"/>
+                                <field name="match_color_id"/>
+                            </group>
+                            <group>
+                                <field name="product_tmpl_id"/>
+                                <field name="category_id"/>
+                                <field name="material_id"/>
+                                <field name="barcode"/>
+                            </group>
+                            <group>
+                                <field name="grid_number"/>
+                                <field name="factory_number"/>
+                                <field name="factory_version"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="BOM details">
+                                <field name="color_bom_line_ids">
+                                    <tree editable="1">
+                                        <field name="company_id" column_invisible="1"/>
+                                        <field name="accessory_id"/>
+                                        <field name="barcode"/>
+                                        <field name="product_id"/>
+                                        <field name="specification"/>
+                                        <field name="color_id"/>
+                                        <field name="engineering_quantity"/>
+                                        <field name="engineering_coefficient"/>
+                                        <field name="stock_quantity"/>
+                                        <field name="production_loss" widget="accessory_id"/>
+                                        <field name="quote_loss" widget="accessory_id"/>
+                                        <field name="reference_price"/>
+                                        <field name="reference_sale_price"/>
+                                        <field name="cost_price"/>
+                                        <field name="quote_price"/>
+                                        <field name="quote_amount"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

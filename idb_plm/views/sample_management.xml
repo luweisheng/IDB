@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="seq_sample_management" model="ir.sequence">
+            <field name="name">Sample bill number</field>
+            <field name="code">idb.sample.management</field>
+            <field name="prefix">SP%(year)s%(month)s%(day)s</field>
+            <field name="padding">3</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <!--        sample_management_tree-->
+        <record id="sample_management_tree" model="ir.ui.view">
+            <field name="name">sample.management.tree</field>
+            <field name="model">mrp.eco</field>
+            <field name="arch" type="xml">
+                <tree string="Multiple sample development orders">
+                    <field name="name"/>
+                    <field name="state"/>
+                    <field name="develop_date"/>
+                    <field name="delivery_date"/>
+                    <field name="customer_id"/>
+                    <field name="salesperson_id"/>
+                    <field name="factory_number"/>
+                    <field name="develop_type_id"/>
+                    <field name="series"/>
+                    <field name="note"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--        sample_management_form-->
+        <record id="mrp_eco_view_form202412211003" model="ir.ui.view">
+            <field name="name">sample.management.form</field>
+            <field name="model">mrp.eco</field>
+            <field name="inherit_id" ref="mrp_plm.mrp_eco_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//header/button[@name='action_new_revision']" position="before">
+<!--                    <button name="action_confirm" string="submit" type="object" class="oe_highlight"/>-->
+<!--                    <button name="submission_schedule" string="submit" type="object" class="oe_highlight"/>-->
+<!--                    <button name="arrange_exceed_the_norm" string="submit" type="object" class="oe_highlight"/>-->
+<!--                    <button name="general_material_preparation" string="submit" type="object" class="oe_highlight"/>-->
+<!--                    <button name="submission_plate_making" string="submit" type="object" class="oe_highlight"/>-->
+<!--                    <button name="sample_inspection" string="submit" type="object" class="oe_highlight"/>-->
+<!--                    <button name="action_done" string="verify" type="object" class="oe_highlight"/>-->
+<!--                    <button name="action_cancel" string="cancel" type="object" class="oe_highlight"/>-->
+<!--                    <button name="action_reject" string="Turn down" type="object" class="oe_highlight btn-danger"/>-->
+<!--                    <button name="sample_score"-->
+<!--                            string="Template score"-->
+<!--                            type="object"-->
+<!--                            class="oe_highlight"/>-->
+<!--                    <button name="pass_inspection" string="submit" type="object" class="oe_highlight"/>-->
+
+<!--                    <button name="shipping_sample" string="Shipping sample" type="object" class="oe_highlight"/>-->
+                </xpath>
+                <xpath expr="//sheet/div[@name='button_box']" position="inside">
+                    <button class="oe_stat_button"
+                            name="action_open_purchase_order"
+                            type="object"
+                            icon="fa-shopping-cart">
+                        <field string="main purchase" name="purchase_count" widget="statinfo"/>
+                    </button>
+<!--                    <button class="oe_stat_button"-->
+<!--                            name="action_open_purchase_order"-->
+<!--                            type="object"-->
+<!--                            icon="fa-shopping-cart">-->
+<!--                        <field string="General purchase order" name="purchase_count" widget="statinfo"/>-->
+<!--                    </button>-->
+                    <button class="oe_stat_button"
+                            name="action_open_mrp_bom_view"
+                            type="object"
+                            icon="fa-list-alt">
+                        <field string="Product BOM" name="bom_count" widget="statinfo"/>
+                    </button>
+                </xpath>
+                <xpath expr="//sheet/div[@name='button_box']" position="before">
+                    <field name="image" widget="image_preview" class="oe_avatar" options="{'size': [200, 200]}"/>
+                </xpath>
+                <xpath expr="//form/sheet/group[1]" position="replace">
+                    <group col="3">
+                        <group>
+                            <field name="active" invisible="1"/>
+                            <label for="category_id" string="Product classification"/>
+                            <div class="o_row">
+                                <field name="category_id" domain="[('parent_id', '=', '成品')]"/>
+                                <field name="factory_number" force_save="1" readonly="1"/>
+                            </div>
+                            <field name="product_tmpl_id" domain="[('type', 'in', ['consu', 'product'])]"/>
+                            <field name="bom_id" readonly="1" force_save="1" context="{'default_product_tmpl_id': product_tmpl_id}"/>
+                            <field name="new_bom_id" invisible="1"/>
+                            <field name="color_id"/>
+                            <field name="series"/>
+                            <field name="specification"/>
+                        </group>
+                        <group>
+                            <field name="customer_id"/>
+                            <field name="salesperson_id"/>
+                            <field name="type_id" options="{'no_open': True, 'no_create': True}" readonly="state != 'confirmed'"/>
+                            <label for="type" string="Apply on"/>
+                            <div class="o_row">
+                                <field name="type" widget="radio" readonly="state != 'confirmed'"/>
+                                <label for="effectivity" string="Effective"/>
+                                <field name="effectivity" widget="radio" required="1" readonly="state == 'done'"/>
+                            </div>
+                            <field name="user_id" readonly="state == 'done'" domain="[('share', '=', False)]" invisible="1"/>
+                            <field name="effectivity_date" invisible="effectivity == 'asap'" readonly="state == 'done'"/>
+                            <field name="state" invisible="1"/>
+                            <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}" readonly="state == 'done'"/>
+                        </group>
+                        <group>
+                            <field name="develop_type_id"/>
+                            <field name="develop_date"/>
+                            <field name="delivery_date"/>
+                            <field name="order_template_id"/>
+                            <field name="company_id" invisible="1"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                            <field name="current_bom_id" invisible="1"/>
+                        </group>
+                    </group>
+                </xpath>
+                <xpath expr="//notebook/page[@name='note']" position="before">
+                    <page string="Material detail">
+                        <field name="sample_management_line_ids">
+                            <tree editable="1">
+                                <!--<field name="category_id"/>-->
+                                <field name="sequence" widget="handle"/>
+                                <field name="accessory_id"/>
+                                <field name="is_required" column_invisible="1"/>
+                                <!--                                               options="{'no_create': True, 'no_create_edit': True, 'no_open': True}"-->
+                                <field name="main_product_id"
+                                       context="{'search_view_ref': 'idb_sample_management.product_search_form_view202411191646'}"/>
+                                <button name="create_main_product"
+                                        type="object"
+                                        string=" "
+                                        icon="fa-pencil-square-o"/>
+                                <field name="main_color_id"/>
+                                <field name="partner_id" context="{'supplier_rank': 1}"/>
+
+                                <field name="price_id" optional="hide"/>
+                                <field name="product_qty"/>
+                                <field name="product_uom_id"/>
+                                <field name="price"/>
+                                <field name="note"/>
+                                <field name="attachment_ids" widget="many2many_binary"/>
+                            </tree>
+                        </field>
+                    </page>
+                    <page string="Plate requirement">
+                        <field name="required_content"/>
+                    </page>
+                    <page string="ET file">
+                        <field name="et_file_ids">
+                            <tree editable="1" delete="0">
+                                <field name="sequence" widget="handle"/>
+                                <field name="create_uid"/>
+                                <field name="bom_date" readonly="1" force_save="1"/>
+                                <field name="file"/>
+                                <button name="create_product_bom_data" type="object" string=" "
+                                        icon="fa-pencil-square-o"/>
+                                <field name="bom_id" readonly="1" force_save="1"/>
+                            </tree>
+                        </field>
+                    </page>
+                    <page string="Scheduling information">
+                        <group>
+                            <group>
+                                <field name="plan_start_date"/>
+                                <field name="plan_end_date"/>
+                                <field name="plan_day"/>
+                            </group>
+                            <group>
+                                <field name="leader_id"/>
+                                <field name="member_id"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="arrange_note"/>
+                        </group>
+                    </page>
+                    <page string="Sample rating sheet">
+                        <field name="sample_score_ids">
+                            <tree editable="1" create="0">
+                                <field name="create_uid"/>
+                                <field name="create_date"/>
+                                <!--                                        <field name="score"/>-->
+                                <field name="grade"/>
+                                <field name="comment"/>
+                            </tree>
+                        </field>
+                    </page>
+                    <page string="Customer comments">
+                        <field name="customer_comment_ids">
+                            <tree editable="1">
+                                <field name="comment_person_id"/>
+                                <field name="comment_date"/>
+                                <field name="score"/>
+                                <field name="comment"/>
+                            </tree>
+                        </field>
+                    </page>
+                    <page string="Problem log">
+                        <field name="abnormal_problem_record_ids">
+                            <tree editable="1">
+                                <field name="problem_type_id"/>
+                                <field name="problem_description"/>
+                                <field name="responsible_person_id"/>
+                                <field name="note"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <!--        sample_management_search_view-->
+        <record id="sample_management_search_view" model="ir.ui.view">
+            <field name="name">sample.management.search</field>
+            <field name="model">mrp.eco</field>
+            <field name="arch" type="xml">
+                <search string="Multiple sample development orders">
+                    <field name="name"/>
+                    <field name="state"/>
+                    <searchpanel>
+                        <field name="customer_id" enable_counters="1"/>
+                    </searchpanel>
+                    <!--                    默认类别分组-->
+                    <group expand="0" string="Default category grouping">
+                        <filter name="customer_id" string="client" domain="[]" context="{'group_by': 'customer_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <!--        action_sample_management_order-->
+<!--        <record id="action_sample_management_order" model="ir.actions.act_window">-->
+<!--            <field name="name">Sample development sheet</field>-->
+<!--            <field name="res_model">idb.sample.management</field>-->
+<!--            <field name="view_mode">tree,form</field>-->
+<!--            <field name="search_view_id" ref="sample_management_search_view"/>-->
+<!--        </record>-->
+
+    </data>
+</odoo>

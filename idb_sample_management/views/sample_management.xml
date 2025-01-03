@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="seq_sample_management" model="ir.sequence">
+            <field name="name">Sample bill number</field>
+            <field name="code">idb.sample.management</field>
+            <field name="prefix">SP%(year)s%(month)s%(day)s</field>
+            <field name="padding">3</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <!--        sample_management_tree-->
+        <record id="sample_management_tree" model="ir.ui.view">
+            <field name="name">sample.management.tree</field>
+            <field name="model">idb.sample.management</field>
+            <field name="arch" type="xml">
+                <tree string="Multiple sample development orders">
+                    <field name="name"/>
+                    <field name="state"/>
+                    <field name="develop_date"/>
+                    <field name="delivery_date"/>
+                    <field name="customer_id"/>
+                    <field name="salesperson_id"/>
+                    <field name="factory_number"/>
+                    <field name="develop_type_id"/>
+                    <field name="series"/>
+                    <field name="note"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--        sample_management_form-->
+        <record id="sample_management_form" model="ir.ui.view">
+            <field name="name">sample.management.form</field>
+            <field name="model">idb.sample.management</field>
+            <field name="arch" type="xml">
+                <form string="Multiple sample development orders">
+                    <header>
+                        <button name="action_confirm" string="submit" type="object" class="oe_highlight"
+                                invisible="state != 'draft'"/>
+                        <button name="submission_schedule" string="submit" type="object" class="oe_highlight"
+                                invisible="state != 'main_material_purchase'"/>
+                        <button name="arrange_exceed_the_norm" string="submit" type="object" class="oe_highlight"
+                                invisible="state != 'development_release_scheduled'"/>
+                        <button name="general_material_preparation" string="submit" type="object" class="oe_highlight"
+                                invisible="state != 'ET'"/>
+                        <button name="submission_plate_making" string="submit" type="object" class="oe_highlight"
+                                invisible="state != 'material_purchase'"/>
+                        <!--样板检验-->
+                        <button name="sample_inspection" string="submit" type="object" class="oe_highlight"
+                                invisible="state != 'plate_making'"/>
+                        <button name="action_done" string="verify" type="object" class="oe_highlight"
+                                invisible="state != 'confirm'"/>
+                        <button name="action_cancel" string="cancel" type="object" class="oe_highlight"
+                                invisible="state != 'done'"/>
+                        <!--                          ET资料导入-->
+<!--                        <button name="import_et_data" string="ET资料导入" type="object" class="oe_highlight"/>-->
+                        <!--                        驳回-->
+                        <button name="action_reject" string="Turn down" type="object" class="oe_highlight btn-danger"
+                                invisible="state == 'draft'"/>
+<!--                        样板评分-->
+                        <button name="sample_score"
+                                string="Template score"
+                                type="object"
+                                class="oe_highlight"
+                                invisible="state != 'sample_inspection'"/>
+                        <button name="pass_inspection" string="submit" type="object" class="oe_highlight"
+                                invisible="state != 'sample_inspection'"/>
+
+                        <button name="shipping_sample" string="Shipping sample" type="object" class="oe_highlight"
+                                invisible="state != 'DHL'"/>
+                        <field name="state" widget="statusbar"
+                               statusbar_visible="draft,done"/>
+                    </header>
+
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button class="oe_stat_button"
+                                    name="action_open_purchase_order"
+                                    type="object"
+                                    icon="fa-shopping-cart">
+                                <field string="main purchase" name="purchase_count" widget="statinfo"/>
+                            </button>
+                            <button class="oe_stat_button"
+                                    name="action_open_purchase_order"
+                                    type="object"
+                                    icon="fa-shopping-cart">
+                                <field string="General purchase order" name="purchase_count" widget="statinfo"/>
+                            </button>
+                            <button class="oe_stat_button"
+                                    name="action_open_mrp_bom_view"
+                                    type="object"
+                                    icon="fa-list-alt">
+                                <field string="Product BOM" name="bom_count" widget="statinfo"/>
+                            </button>
+                        </div>
+                        <field name="image" widget="image_preview" class="oe_avatar" options="{'size': [200, 200]}"/>
+<!--                        <field name="image" widget="drag_and_drop" class="oe_avatar"/>-->
+                        <div class="oe_title">
+                            <h1>
+                                <div class="d-flex">
+                                    <field class="text-break" name="name" options="{'line_breaks': False}" widget="text"
+                                           readonly="True" force_save="1"/>
+                                </div>
+                            </h1>
+                        </div>
+                        <group col="4">
+                            <group>
+                                <label for="customer_id"/>
+                                <div class="o_row">
+                                    <field name="customer_id" context="{'show_barcode': True}" readonly="state != 'draft'"/>
+                                    Customer account number <field name="customer_factory_number" readonly="state != 'draft'"/>
+<!--                                    客户号 <field name="customer_number" readonly="state != 'draft'"/>-->
+                                </div>
+                                <field name="salesperson_id" readonly="state != 'draft'"/>
+                                <field name="order_template_id" readonly="state != 'draft'"/>
+                                <field name="note" readonly="state != 'draft'"/>
+                            </group>
+                            <group>
+                                <label for="category_id"/>
+                                <div class="o_row">
+                                    <field name="category_id" readonly="state != 'draft'"/>
+                                    Style number <field name="factory_number" force_save="1" readonly="state != 'draft'"/>
+                                </div>
+                                <field name="color_id" readonly="state != 'draft'"/>
+                                <field name="series" readonly="state != 'draft'"/>
+                                <field name="specification" readonly="state != 'draft'"/>
+                            </group>
+                            <group>
+                                <field name="develop_type_id" readonly="state != 'draft'"/>
+                                <field name="develop_date" readonly="state != 'draft'"/>
+                                <field name="delivery_date" readonly="state != 'draft'"/>
+                                <field name="bom_id" readonly="1" force_save="1"/>
+                            </group>
+                            <group>
+                                <label for="is_outsourcing"/>
+                                <div class="o_row">
+                                    <field name="is_outsourcing" widget="boolean_toggle" readonly="state != 'draft'"/>
+                                    <label for="outsourcing_partner_id" string="Merchant contractor" class="d-block"/>
+                                    <field name="outsourcing_partner_id" readonly="state != 'draft'"/>
+                                </div>
+<!--                                <label for="quantity"/>-->
+<!--                                <div class="o_row">-->
+<!--                                    <field name="quantity"/>-->
+<!--                                    <label for="price" string="单价" class="d-block"/>-->
+<!--                                    <field name="price"/>-->
+<!--                                </div>-->
+                                <field name="quantity" readonly="state != 'draft'"/>
+                                <field name="price" readonly="state != 'draft'"/>
+
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Material detail">
+                                <field name="sample_management_line_ids">
+                                    <tree editable="1">
+                                        <!--<field name="category_id"/>-->
+                                        <field name="sequence" widget="handle"/>
+                                        <field name="accessory_id"/>
+                                        <field name="is_required" column_invisible="1"/>
+                                        <!--                                               options="{'no_create': True, 'no_create_edit': True, 'no_open': True}"-->
+                                        <field name="main_product_id"
+                                               context="{'search_view_ref': 'idb_sample_management.product_search_form_view202411191646'}"/>
+                                        <button name="create_main_product"
+                                                type="object"
+                                                string=" "
+                                                icon="fa-pencil-square-o"/>
+                                        <field name="main_color_id"/>
+                                        <field name="partner_id" context="{'supplier_rank': 1}"/>
+
+                                        <field name="price_id" optional="hide"/>
+                                        <field name="product_qty"/>
+                                        <field name="product_uom_id"/>
+                                        <field name="price"/>
+                                        <field name="note"/>
+                                        <field name="attachment_ids" widget="many2many_binary"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Plate requirement">
+                                <field name="required_content"/>
+                            </page>
+                            <page string="ET file">
+                                 <field name="et_file_ids">
+                                    <tree editable="1" delete="0">
+                                        <field name="sequence" widget="handle"/>
+                                        <field name="create_uid"/>
+                                        <field name="bom_date" readonly="1" force_save="1"/>
+                                        <field name="file"/>
+                                        <button name="create_product_bom_data" type="object" string=" " icon="fa-pencil-square-o"/>
+                                        <field name="bom_id" readonly="1" force_save="1"/>
+                                    </tree>
+                                 </field>
+                            </page>
+                            <page string="Scheduling information">
+                                <group>
+                                    <group>
+                                        <field name="plan_start_date"/>
+                                        <field name="plan_end_date"/>
+                                        <field name="plan_day"/>
+                                    </group>
+                                    <group>
+                                        <field name="leader_id"/>
+                                        <field name="member_id"/>
+                                    </group>
+                                </group>
+                                <group>
+                                    <field name="arrange_note"/>
+                                </group>
+                            </page>
+                            <page string="Sample rating sheet">
+                                <field name="sample_score_ids">
+                                    <tree editable="1" create="0">
+                                        <field name="create_uid"/>
+                                        <field name="create_date"/>
+<!--                                        <field name="score"/>-->
+                                        <field name="grade"/>
+                                        <field name="comment"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Customer comments">
+                                <field name="customer_comment_ids">
+                                    <tree editable="1">
+                                        <field name="comment_person_id"/>
+                                        <field name="comment_date"/>
+                                        <field name="score"/>
+                                        <field name="comment"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Problem log">
+                                <field name="abnormal_problem_record_ids">
+                                    <tree editable="1">
+                                        <field name="problem_type_id"/>
+                                        <field name="problem_description"/>
+                                        <field name="responsible_person_id"/>
+                                        <field name="note"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!--        sample_management_search_view-->
+        <record id="sample_management_search_view" model="ir.ui.view">
+            <field name="name">sample.management.search</field>
+            <field name="model">idb.sample.management</field>
+            <field name="arch" type="xml">
+                <search string="Multiple sample development orders">
+                    <field name="name"/>
+                    <field name="state"/>
+                    <searchpanel>
+                        <field name="customer_id" enable_counters="1"/>
+                    </searchpanel>
+                    <!--                    默认类别分组-->
+                    <group expand="0" string="Default category grouping">
+                        <filter name="customer_id" string="client" domain="[]" context="{'group_by': 'customer_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <!--        action_sample_management_order-->
+        <record id="action_sample_management_order" model="ir.actions.act_window">
+            <field name="name">Sample development sheet</field>
+            <field name="res_model">idb.sample.management</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="sample_management_search_view"/>
+        </record>
+
+    </data>
+</odoo>

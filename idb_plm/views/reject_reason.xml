@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="view_reject_reason_form" model="ir.ui.view">
+            <field name="name">Sample order rejected</field>
+            <field name="model">idb.reject.reason</field>
+            <field name="arch" type="xml">
+                <form string="Sample order rejected">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+<!--                            <field name="sample_management_id" invisible="1"/>-->
+                        </group>
+                        <button name="submit_reject_reason" string="Turn down" class="btn-danger w-100" type="object"/>
+                    </sheet>
+                    <footer/>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

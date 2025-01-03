@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+
+        <record id="idb_development_schedule_form" model="ir.ui.view">
+            <field name="name">idb.development.schedule.form</field>
+            <field name="model">idb.development.schedule</field>
+            <field name="arch" type="xml">
+                <form string="Development schedule">
+                    <group>
+                        <group>
+                            <field name="plan_start_date"/>
+                            <field name="plan_end_date"/>
+                        </group>
+                        <group>
+                            <field name="leader_id"/>
+                            <field name="member_id"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="note"/>
+                    </group>
+                    <footer>
+                        <button name="action_confirm" string="verify" type="object" class="btn-primary"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

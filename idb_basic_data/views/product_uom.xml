@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+<!--        继承product_uom_form_action修改uom_type只读属性为False-->
+        <record id="product_uom_form_action202412041340" model="ir.ui.view">
+            <field name="name">unit</field>
+            <field name="model">uom.uom</field>
+            <field name="inherit_id" ref="uom.product_uom_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='uom_type']" position="attributes">
+                    <attribute name="readonly">0</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="product_uom_tree_view202412041340" model="ir.ui.view">
+            <field name="name">unit</field>
+            <field name="model">uom.uom</field>
+            <field name="inherit_id" ref="uom.product_uom_tree_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//tree" position="attributes">
+                    <attribute name="create">1</attribute>
+                </xpath>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

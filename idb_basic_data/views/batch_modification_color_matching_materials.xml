@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="batch_modification_color_matching_materials_form_view" model="ir.ui.view">
+            <field name="name">Product BOM</field>
+            <field name="model">batch.modification.color.matching.materials</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <field name="materials_line_ids" widget="one2many_list">
+                            <tree create="0" editable="bottom">
+                                <field name="accessory_id" options="{'no_create': True, 'no_create_edit': True, 'no_open': True}"/>
+                                <field name="color_id" options="{'no_create': True, 'no_create_edit': True, 'no_open': True}"/>
+                                <field name="product_id" options="{'no_create': True, 'no_create_edit': True, 'no_open': True}"/>
+                            </tree>
+                        </field>
+                    </sheet>
+                    <footer>
+                        <button name="batch_modification_color_matching_materials" string="Modify" type="object" class="btn-primary w-100"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

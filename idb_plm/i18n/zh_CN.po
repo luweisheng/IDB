@@ -1,0 +1,1096 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* idb_plm
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-24 03:42+0000\n"
+"PO-Revision-Date: 2024-12-24 03:42+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__message_needaction
+msgid "Action Needed"
+msgstr "需要采取行动"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__activity_ids
+msgid "Activities"
+msgstr "活动"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "活动异常装饰"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__activity_state
+msgid "Activity State"
+msgstr "活动状态"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "活动类型图标"
+
+#. module: idb_plm
+#: model_terms:ir.ui.view,arch_db:idb_plm.mrp_eco_view_form202412211003
+msgid "Apply on"
+msgstr "申请于"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__message_attachment_count
+msgid "Attachment Count"
+msgstr "附件数量"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_et_file__bom_date
+msgid "BOM Date"
+msgstr "物料清单日期"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_mrp_bom
+msgid "Bill of Material"
+msgstr "物料清单"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__sample_score_ids
+msgid "Boilerplate score detail"
+msgstr "样板分数详细信息"
+
+#. module: idb_plm
+#. odoo-python
+#: code:addons/idb_plm/models/mrp_bom.py:0
+#, python-format
+msgid "Bom"
+msgstr "邦"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__bom_count
+msgid "Bom quantity"
+msgstr "货物数量"
+
+#. module: idb_plm
+#: model_terms:ir.ui.view,arch_db:idb_plm.idb_development_schedule_form
+msgid "Cancel"
+msgstr "取消"
+
+#. module: idb_plm
+#: model:ir.model.constraint,message:idb_plm.constraint_product_category_name_uniq
+msgid "Category names must be unique"
+msgstr "类别名称必须是唯一的"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_idb_reject_reason
+#: model:ir.model.fields,field_description:idb_plm.field_idb_reject_reason__name
+msgid "Cause of rejection"
+msgstr "拒绝原因"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__customer_number
+msgid "Client number"
+msgstr "客户编号"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_res_company
+msgid "Companies"
+msgstr "公司"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_idb_create_product_template
+msgid "Create a Product Template"
+msgstr "创建产品模板"
+
+#. module: idb_plm
+#. odoo-python
+#: code:addons/idb_plm/models/mrp_eco.py:0
+#, python-format
+msgid "Create product"
+msgstr "创建产品"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_abnormal_problem_record__create_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_abnormal_problem_record_type__create_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_customer_comment__create_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_develop_type__create_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_development_schedule__create_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_et_file__create_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_bom__create_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_no_position_line__create_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_position_line__create_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_quote_line__create_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_reject_reason__create_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_management_line__create_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_score__create_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_score_line__create_uid
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_bom_no_part_detail__create_uid
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_bom_part_detail__create_uid
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__create_uid
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template_line__create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_abnormal_problem_record__create_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_abnormal_problem_record_type__create_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_customer_comment__create_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_develop_type__create_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_development_schedule__create_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_et_file__create_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_bom__create_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_no_position_line__create_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_position_line__create_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_quote_line__create_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_reject_reason__create_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_management_line__create_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_score__create_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_score_line__create_date
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_bom_no_part_detail__create_date
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_bom_part_detail__create_date
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__create_date
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template_line__create_date
+msgid "Created on"
+msgstr "创建于"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__customer_factory_number
+msgid "Customer account number"
+msgstr "客户帐号"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_idb_customer_comment
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__customer_comment_ids
+#: model_terms:ir.ui.view,arch_db:idb_plm.mrp_eco_view_form202412211003
+msgid "Customer comments"
+msgstr "顾客评论"
+
+#. module: idb_plm
+#: model_terms:ir.ui.view,arch_db:idb_plm.sample_management_search_view
+msgid "Default category grouping"
+msgstr "默认类别分组"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__delivery_date
+msgid "Delivery date"
+msgstr "交货日期"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__description
+msgid "Description"
+msgstr "描述"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__develop_date
+msgid "Development date"
+msgstr "开发日期"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_idb_development_schedule
+msgid "Development sample sheet"
+msgstr "开发样表"
+
+#. module: idb_plm
+#: model_terms:ir.ui.view,arch_db:idb_plm.idb_development_schedule_form
+msgid "Development schedule"
+msgstr "开发进度"
+
+#. module: idb_plm
+#: model_terms:ir.ui.view,arch_db:idb_plm.template_configuration_form
+#: model_terms:ir.ui.view,arch_db:idb_plm.template_configuration_tree
+msgid "Development template"
+msgstr "开发模板"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_idb_develop_type
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__develop_type_id
+msgid "Development type"
+msgstr "开发类型"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_abnormal_problem_record__display_name
+#: model:ir.model.fields,field_description:idb_plm.field_idb_abnormal_problem_record_type__display_name
+#: model:ir.model.fields,field_description:idb_plm.field_idb_customer_comment__display_name
+#: model:ir.model.fields,field_description:idb_plm.field_idb_develop_type__display_name
+#: model:ir.model.fields,field_description:idb_plm.field_idb_development_schedule__display_name
+#: model:ir.model.fields,field_description:idb_plm.field_idb_et_file__display_name
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_bom__display_name
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_no_position_line__display_name
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_position_line__display_name
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_quote_line__display_name
+#: model:ir.model.fields,field_description:idb_plm.field_idb_reject_reason__display_name
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_management_line__display_name
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_score__display_name
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_score_line__display_name
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_bom_no_part_detail__display_name
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_bom_part_detail__display_name
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__display_name
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template_line__display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_management_line__main_color_id
+msgid "Dominant colour"
+msgstr "主色"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_mrp_eco_stage
+msgid "ECO Stage"
+msgstr "ECO阶段"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_idb_et_file
+#: model_terms:ir.ui.view,arch_db:idb_plm.mrp_eco_view_form202412211003
+msgid "ET file"
+msgstr "ET 文件"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__et_file_ids
+msgid "ET file list"
+msgstr "ET 文件列表"
+
+#. module: idb_plm
+#: model_terms:ir.ui.view,arch_db:idb_plm.mrp_eco_view_form202412211003
+msgid "Effective"
+msgstr "有效的"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_mrp_eco
+msgid "Engineering Change Order (ECO)"
+msgstr "工程变更单 (ECO)"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_idb_abnormal_problem_record
+msgid "Exception problem log"
+msgstr "异常问题日志"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__abnormal_problem_record_ids
+msgid "Exception problem log list"
+msgstr "异常问题日志列表"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_idb_abnormal_problem_record_type
+msgid "Exception problem record type"
+msgstr "异常问题记录类型"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_et_file__file
+msgid "File"
+msgstr "文件"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_et_file__file_name
+#: model:ir.model.fields,field_description:idb_plm.field_idb_et_file__name
+msgid "Filename"
+msgstr "文件名"
+
+#. module: idb_plm
+#. odoo-python
+#: code:addons/idb_plm/models/mrp_eco.py:0
+#, python-format
+msgid "Fill in the schedule content"
+msgstr "填写行程内容"
+
+#. module: idb_plm
+#: model:ir.model.fields.selection,name:idb_plm.selection__product_category__sort_selection__finished_product
+msgid "Finished product"
+msgstr "成品"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__message_follower_ids
+msgid "Followers"
+msgstr "关注者"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "追随者（合作伙伴）"
+
+#. module: idb_plm
+#: model:ir.model.fields,help:idb_plm.field_sample_development_single_template__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Font awesome 图标，例如 fa-tasks"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__has_message
+msgid "Has Message"
+msgstr "有留言"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_development_schedule__leader_id
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__leader_id
+msgid "Head of the gang"
+msgstr "团伙头目"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_abnormal_problem_record__id
+#: model:ir.model.fields,field_description:idb_plm.field_idb_abnormal_problem_record_type__id
+#: model:ir.model.fields,field_description:idb_plm.field_idb_customer_comment__id
+#: model:ir.model.fields,field_description:idb_plm.field_idb_develop_type__id
+#: model:ir.model.fields,field_description:idb_plm.field_idb_development_schedule__id
+#: model:ir.model.fields,field_description:idb_plm.field_idb_et_file__id
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_bom__id
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_no_position_line__id
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_position_line__id
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_quote_line__id
+#: model:ir.model.fields,field_description:idb_plm.field_idb_reject_reason__id
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_management_line__id
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_score__id
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_score_line__id
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_bom_no_part_detail__id
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_bom_part_detail__id
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__id
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__name
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__activity_exception_icon
+msgid "Icon"
+msgstr "图标"
+
+#. module: idb_plm
+#: model:ir.model.fields,help:idb_plm.field_sample_development_single_template__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "表示异常活动的图标。"
+
+#. module: idb_plm
+#: model:ir.model.fields,help:idb_plm.field_sample_development_single_template__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "如果选中，则表示有新消息需要您关注。"
+
+#. module: idb_plm
+#: model:ir.model.fields,help:idb_plm.field_sample_development_single_template__message_has_error
+#: model:ir.model.fields,help:idb_plm.field_sample_development_single_template__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "如果选中，则某些消息会出现传送错误。"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__image
+msgid "Image"
+msgstr "图像"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_management_line__note
+msgid "Instructions"
+msgstr "指示"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__message_is_follower
+msgid "Is Follower"
+msgstr "是追随者"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco_stage__junior_id
+msgid "Junior stage"
+msgstr "青少年阶段"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_abnormal_problem_record__write_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_abnormal_problem_record_type__write_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_customer_comment__write_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_develop_type__write_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_development_schedule__write_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_et_file__write_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_bom__write_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_no_position_line__write_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_position_line__write_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_quote_line__write_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_reject_reason__write_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_management_line__write_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_score__write_uid
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_score_line__write_uid
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_bom_no_part_detail__write_uid
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_bom_part_detail__write_uid
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__write_uid
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template_line__write_uid
+msgid "Last Updated by"
+msgstr "最后更新者"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_abnormal_problem_record__write_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_abnormal_problem_record_type__write_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_customer_comment__write_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_develop_type__write_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_development_schedule__write_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_et_file__write_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_bom__write_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_no_position_line__write_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_position_line__write_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_product_quote_line__write_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_reject_reason__write_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_management_line__write_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_score__write_date
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_score_line__write_date
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_bom_no_part_detail__write_date
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_bom_part_detail__write_date
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__write_date
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template_line__write_date
+msgid "Last Updated on"
+msgstr "最后更新于"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_development_schedule__note
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__note
+msgid "Mark"
+msgstr "标记"
+
+#. module: idb_plm
+#: model_terms:ir.ui.view,arch_db:idb_plm.mrp_eco_view_form202412211003
+msgid "Material detail"
+msgstr "材质细节"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_management_line__main_product_id
+msgid "Materials"
+msgstr "材料"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__outsourcing_partner_id
+msgid "Merchant contractor"
+msgstr "商人承包商"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__message_has_error
+msgid "Message Delivery error"
+msgstr "消息传递错误"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__message_ids
+msgid "Messages"
+msgstr "消息"
+
+#. module: idb_plm
+#: model_terms:ir.ui.view,arch_db:idb_plm.sample_management_search_view
+#: model_terms:ir.ui.view,arch_db:idb_plm.sample_management_tree
+msgid "Multiple sample development orders"
+msgstr "多个样品开发订单"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "我的活动截止日期"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_develop_type__name
+#: model:ir.model.fields,field_description:idb_plm.field_idb_development_schedule__name
+msgid "Name"
+msgstr ""
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "下一个活动日历事件"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "下一活动截止日期"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__activity_summary
+msgid "Next Activity Summary"
+msgstr "下一活动摘要"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__activity_type_id
+msgid "Next Activity Type"
+msgstr "下一个活动类型"
+
+#. module: idb_plm
+#. odoo-python
+#: code:addons/idb_plm/models/mrp_eco.py:0
+#, python-format
+msgid ""
+"No part information and products are not filled in, do not submit the next "
+"step!"
+msgstr "没有零件信息和产品没有填写，请勿进行下一步提交！"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__message_needaction_counter
+msgid "Number of Actions"
+msgstr "动作数量"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__message_has_error_counter
+msgid "Number of errors"
+msgstr "错误数量"
+
+#. module: idb_plm
+#: model:ir.model.fields,help:idb_plm.field_sample_development_single_template__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "需要采取行动的消息数量"
+
+#. module: idb_plm
+#: model:ir.model.fields,help:idb_plm.field_sample_development_single_template__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "传递错误的消息数"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_res_company__order_template_id
+msgid "Order template"
+msgstr "订单模板"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_product_category__parent_name
+msgid "Parent class"
+msgstr "父类"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_abnormal_problem_record__responsible_person_id
+msgid "Person in charge"
+msgstr "负责人"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_development_schedule__plan_end_date
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__plan_end_date
+msgid "Planned completion date"
+msgstr "计划完成日期"
+
+#. module: idb_plm
+#: model_terms:ir.ui.view,arch_db:idb_plm.mrp_eco_view_form202412211003
+msgid "Plate requirement"
+msgstr "板材要求"
+
+#. module: idb_plm
+#. odoo-python
+#: code:addons/idb_plm/models/et_file.py:0
+#, python-format
+msgid "Please upload ET file"
+msgstr "请上传 ET 文件"
+
+#. module: idb_plm
+#. odoo-python
+#: code:addons/idb_plm/models/mrp_eco.py:0
+#, python-format
+msgid ""
+"Position information and products are not filled in, do not submit the next "
+"step!"
+msgstr "职位信息与产品未填写，请勿提交下一步！"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_management_line__price
+msgid "Price"
+msgstr "价格"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_management_line__price_id
+msgid "Price list"
+msgstr "价格表"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_abnormal_problem_record__problem_description
+msgid "Problem description"
+msgstr "问题描述"
+
+#. module: idb_plm
+#: model_terms:ir.ui.view,arch_db:idb_plm.mrp_eco_view_form202412211003
+msgid "Problem log"
+msgstr "问题日志"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_abnormal_problem_record__problem_type_id
+msgid "Problem type"
+msgstr "问题类型"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_product_template
+msgid "Product"
+msgstr "产品"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_et_file__bom_id
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__bom_id
+#: model_terms:ir.ui.view,arch_db:idb_plm.mrp_eco_view_form202412211003
+msgid "Product BOM"
+msgstr "产品物料清单"
+
+#. module: idb_plm
+#. odoo-python
+#: code:addons/idb_plm/models/mrp_eco.py:0
+#, python-format
+msgid ""
+"Product BOM not created, do not submit next step! Please perform ET data "
+"generation BOM operation!"
+msgstr "产品BOM未创建，请勿提交下一步！请执行ET数据生成BOM操作！"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_product_category
+msgid "Product Category"
+msgstr "产品类别"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_product_product
+msgid "Product Variant"
+msgstr "产品变体"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__category_id
+#: model_terms:ir.ui.view,arch_db:idb_plm.mrp_eco_view_form202412211003
+msgid "Product classification"
+msgstr "产品分类"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__color_id
+msgid "Product main color"
+msgstr "产品主色调"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__series
+msgid "Product series"
+msgstr "产品系列"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__specification
+msgid "Product specification"
+msgstr "产品规格"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_purchase_order
+msgid "Purchase Order"
+msgstr "采购订单"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "采购订单行"
+
+#. module: idb_plm
+#. odoo-python
+#: code:addons/idb_plm/models/mrp_eco.py:0
+#, python-format
+msgid "Purchase details"
+msgstr "购买详情"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__purchase_count
+msgid "Purchase order quantity"
+msgstr "采购订单数量"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__rating_ids
+msgid "Ratings"
+msgstr "评级"
+
+#. module: idb_plm
+#: model:ir.model.fields.selection,name:idb_plm.selection__product_category__sort_selection__raw_material
+msgid "Raw material"
+msgstr "原料"
+
+#. module: idb_plm
+#. odoo-python
+#: code:addons/idb_plm/models/mrp_eco.py:0
+#, python-format
+msgid "Reason for rejection"
+msgstr "拒绝原因"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__required_content
+msgid "Required content"
+msgstr "必需内容"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__activity_user_id
+msgid "Responsible User"
+msgstr "负责任的用户"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "短信发送错误"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_score__sample_id
+msgid "Sample"
+msgstr "样本"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_score_line__sample_management_id
+msgid "Sample Management"
+msgstr "样品管理"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_idb_sample_score
+msgid "Sample Score"
+msgstr "样本分数"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_idb_sample_score_line
+msgid "Sample Score Line"
+msgstr "样本分数线"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_sample_development_single_template
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template_line__sample_development_single_template_id
+msgid "Sample development single template"
+msgstr "示例开发单模板"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_sample_development_single_template_line
+msgid "Sample development single template details"
+msgstr "样本开发单模板详情"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_matching_color_bom__sample_id
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_bom__sample_id
+msgid "Sample list"
+msgstr "示例列表"
+
+#. module: idb_plm
+#: model_terms:ir.ui.view,arch_db:idb_plm.view_company_form202411181530
+msgid "Sample list management"
+msgstr "样品清单管理"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_abnormal_problem_record__sample_management_id
+#: model:ir.model.fields,field_description:idb_plm.field_idb_customer_comment__sample_management_id
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_management_line__sample_management_id
+#: model:ir.model.fields,field_description:idb_plm.field_purchase_order__sample_management_id
+#: model:ir.model.fields,field_description:idb_plm.field_purchase_order_line__sample_management_line_id
+msgid "Sample management"
+msgstr "样品管理"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_idb_sample_management_line
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__sample_management_line_ids
+msgid "Sample management detail"
+msgstr "样品管理明细"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_product_product__sample_order_count
+#: model:ir.model.fields,field_description:idb_plm.field_product_template__sample_order_count
+msgid "Sample order quantity"
+msgstr "样品订单数量"
+
+#. module: idb_plm
+#: model_terms:ir.ui.view,arch_db:idb_plm.view_reject_reason_form
+msgid "Sample order rejected"
+msgstr "样品订单被拒绝"
+
+#. module: idb_plm
+#: model_terms:ir.ui.view,arch_db:idb_plm.idb_sample_score_form
+#: model_terms:ir.ui.view,arch_db:idb_plm.mrp_eco_view_form202412211003
+msgid "Sample rating sheet"
+msgstr "评分表样本"
+
+#. module: idb_plm
+#. odoo-python
+#: code:addons/idb_plm/models/mrp_eco.py:0
+#, python-format
+msgid "Sample score"
+msgstr "样本分数"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__plan_day
+msgid "Scheduled completion days"
+msgstr "预计完成天数"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_development_schedule__plan_start_date
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__plan_start_date
+msgid "Scheduled start date"
+msgstr "预计开始日期"
+
+#. module: idb_plm
+#: model_terms:ir.ui.view,arch_db:idb_plm.mrp_eco_view_form202412211003
+msgid "Scheduling information"
+msgstr "调度信息"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__arrange_note
+msgid "Scheduling remarks"
+msgstr "日程安排备注"
+
+#. module: idb_plm
+#: model:ir.model.fields.selection,name:idb_plm.selection__product_category__sort_selection__semi_finished_product
+msgid "Semi-finished product"
+msgstr "半成品"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_et_file__sequence
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_management_line__sequence
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template_line__sequence
+msgid "Serial number"
+msgstr "序列号"
+
+#. module: idb_plm
+#: model:ir.model.fields,help:idb_plm.field_sample_development_single_template__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"根据活动的状态\n"
+"逾期：已过截止日期\n"
+"今日：活动日期为今日\n"
+"计划：未来活动。"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__factory_number
+msgid "Style number"
+msgstr "款号"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco_stage__superiors_id
+msgid "Superior stage"
+msgstr "优越阶段"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__sample_development_single_template_line_ids
+msgid "Template detail"
+msgstr "模板详细信息"
+
+#. module: idb_plm
+#. odoo-python
+#: code:addons/idb_plm/models/mrp_eco.py:0
+#, python-format
+msgid "The current stage has no higher stage, Contact the administrator!"
+msgstr "当前阶段尚无更高阶段，请联系管理员！"
+
+#. module: idb_plm
+#. odoo-python
+#: code:addons/idb_plm/models/mrp_eco.py:0
+#, python-format
+msgid "The current stage has no lower stage, Contact the administrator!"
+msgstr "当前阶段尚无下级阶段，请联系管理员！"
+
+#. module: idb_plm
+#: model_terms:ir.ui.view,arch_db:idb_plm.view_reject_reason_form
+msgid "Turn down"
+msgstr "驳回"
+
+#. module: idb_plm
+#: model:ir.model.fields,help:idb_plm.field_sample_development_single_template__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "记录中的异常活动的类型。"
+
+#. module: idb_plm
+#: model:ir.model.fields,help:idb_plm.field_mrp_eco__customer_number
+msgid "Use a barcode to identify this contact."
+msgstr "使用条形码识别此联系人。"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template__website_message_ids
+msgid "Website Messages"
+msgstr "网站留言"
+
+#. module: idb_plm
+#: model:ir.model.fields,help:idb_plm.field_sample_development_single_template__website_message_ids
+msgid "Website communication history"
+msgstr "网站通讯历史"
+
+#. module: idb_plm
+#: model:ir.model.fields.selection,name:idb_plm.selection__product_category__sort_selection__accessory
+msgid "attachment"
+msgstr "依恋"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_management_line__attachment_ids
+msgid "attachments"
+msgstr "附件"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__salesperson_id
+msgid "business"
+msgstr "商业"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_management_line__accessory_id
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template_line__accessory_id
+msgid "category"
+msgstr "类别"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__customer_id
+#: model_terms:ir.ui.view,arch_db:idb_plm.sample_management_search_view
+msgid "client"
+msgstr "客户"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_abnormal_problem_record_type__code
+#: model:ir.model.fields,field_description:idb_plm.field_idb_develop_type__code
+msgid "code"
+msgstr "代码"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_customer_comment__comment
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_score__comment
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_score_line__comment
+msgid "comment"
+msgstr "评论"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_customer_comment__comment_date
+msgid "comment date"
+msgstr "评论日期"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_customer_comment__comment_person_id
+msgid "comment user"
+msgstr "评论用户"
+
+#. module: idb_plm
+#: model_terms:ir.ui.view,arch_db:idb_plm.template_configuration_form
+msgid "detail"
+msgstr "细节"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_development_schedule__member_id
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__member_id
+msgid "exceptionalist"
+msgstr "例外论者"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_idb_product_bom
+msgid "idb.product.bom"
+msgstr "idb.产品目录"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_idb_product_no_position_line
+msgid "idb.product.no.position.line"
+msgstr "idb.产品编号.位置.行"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_idb_product_position_line
+msgid "idb.product.position.line"
+msgstr "idb.产品.位置.线"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_idb_product_quote_line
+msgid "idb.product.quote.line"
+msgstr "idb.产品.报价.行"
+
+#. module: idb_plm
+#: model_terms:ir.ui.view,arch_db:idb_plm.mrp_eco_view_form202412211003
+msgid "main purchase"
+msgstr "主要购买"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_score__score
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_score_line__score
+msgid "mark"
+msgstr "标记"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_mrp_bom_no_part_detail
+msgid "mrp.bom.no.part.detail"
+msgstr "mrp.bom.no.零件详细信息"
+
+#. module: idb_plm
+#: model:ir.model,name:idb_plm.model_mrp_bom_part_detail
+msgid "mrp.bom.part.detail"
+msgstr "mrp.bom.零件详细信息"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_abnormal_problem_record_type__name
+msgid "name"
+msgstr "姓名"
+
+#. module: idb_plm
+#: model:ir.model.fields.selection,name:idb_plm.selection__product_category__sort_selection__other
+msgid "other"
+msgstr "其他"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__is_outsourcing
+msgid "outsource"
+msgstr "外包"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__price
+msgid "price"
+msgstr "价格"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_management_line__product_qty
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__quantity
+msgid "quantity"
+msgstr "数量"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_score__grade
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_score_line__grade
+msgid "rate"
+msgstr "速度"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_abnormal_problem_record__note
+msgid "remark"
+msgstr "评论"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_management_line__is_required
+#: model:ir.model.fields,field_description:idb_plm.field_sample_development_single_template_line__is_required
+msgid "required"
+msgstr "必需的"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_et_file__sample_id
+msgid "sample"
+msgstr "样本"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_customer_comment__score
+msgid "score"
+msgstr "分数"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_product_category__sort_selection
+msgid "sort"
+msgstr "种类"
+
+#. module: idb_plm
+#: model_terms:ir.ui.view,arch_db:idb_plm.idb_sample_score_form
+msgid "submit"
+msgstr "提交"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_management_line__partner_id
+msgid "supplier"
+msgstr "供应商"
+
+#. module: idb_plm
+#: model:ir.actions.act_window,name:idb_plm.action_template_configuration
+#: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__order_template_id
+#: model_terms:ir.actions.act_window,help:idb_plm.action_template_configuration
+msgid "template"
+msgstr "模板"
+
+#. module: idb_plm
+#: model:ir.model.fields,field_description:idb_plm.field_idb_sample_management_line__product_uom_id
+msgid "unit"
+msgstr "单元"
+
+#. module: idb_plm
+#: model_terms:ir.ui.view,arch_db:idb_plm.idb_development_schedule_form
+msgid "verify"
+msgstr "核实"
+
+#. module: idb_plm
+#. odoo-python
+#: code:addons/idb_plm/models/mrp_eco.py:0
+#, python-format
+msgid "{}No supplier! Submission prohibited!"
+msgstr "{}无供应商！禁止提交！"
+
+#. module: idb_plm
+#. odoo-python
+#: code:addons/idb_plm/models/mrp_eco.py:0
+#, python-format
+msgid "{}Not filled! Prohibit submission！"
+msgstr "{}未填！禁止提交！"
+
+#. module: idb_plm
+#: model_terms:ir.ui.view,arch_db:idb_plm.view_template_property_form202412191613
+msgid "样品单数量"
+msgstr ""

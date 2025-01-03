@@ -2,7 +2,7 @@
 <odoo>
     <data>
         <record id="view_create_product_template_form" model="ir.ui.view">
-            <field name="name">创建产品模板</field>
+            <field name="name">Create Product Template</field>
             <field name="model">idb.create.product.template</field>
             <field name="arch" type="xml">
                 <form string="Product" version="7.0">
@@ -26,9 +26,9 @@
                                 />
                             </group>
                         </group>
-                        <button name="create_product" class="btn-primary w-100" string="创建产品" type="object"/>
+                        <button name="create_product" class="btn-primary w-100" string="Create Product" type="object"/>
                         <notebook>
-                            <page string="属性列表">
+                            <page string="Attribute List">
                                 <field name="value_line" widget="one2many_list">
                                     <tree string="Attributes" create='0' delete="0" editable="1">
                                         <field name="product_attribute_id"/>

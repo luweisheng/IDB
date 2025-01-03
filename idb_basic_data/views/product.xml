@@ -6,6 +6,9 @@
             <field name="model">product.product</field>
             <field name="inherit_id" ref="product.product_product_tree_view"/>
             <field name="arch" type="xml">
+                <xpath expr="//tree" position="attributes">
+                    <attribute name="default_order">category_barcode</attribute>
+                </xpath>
                 <xpath expr="//tree/field[@name='default_code']" position="attributes">
                     <attribute name="column_invisible">1</attribute>
                 </xpath>
@@ -23,6 +26,19 @@
             </field>
         </record>
 
+        <record id="product_template_search_view202412071521" model="ir.ui.view">
+            <field name="name">add search_panel</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_search_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='categ_id']" position="after">
+                    <searchpanel>
+                        <field name="categ_id" enable_counters="1"/>
+                    </searchpanel>
+                </xpath>
+            </field>
+        </record>
+
         <record id="view_template_property_form202411281156" model="ir.ui.view">
             <field name="name">product.template.stock.property.form.inherit</field>
             <field name="model">product.template</field>
@@ -31,25 +47,36 @@
                 <xpath expr="//notebook/page[@name='general_information']" position="attributes">
                     <attribute name="invisible">1</attribute>
                 </xpath>
+                <xpath expr="//header" position="inside">
+                    <button name="take_next_level" type="object" class="btn btn-primary" string="Take it to the next level"
+                            invisible="state in ('sustaining', 'obsolete')"/>
+                    <button name="product_cancel" type="object" class="btn btn-danger" string="Cancel" invisible="state == 'obsolete'"/>
+                    <field name="state" widget="statusbar"/>
+                </xpath>
                 <xpath expr="//notebook/page[@name='general_information']" position="before">
-                    <page string="基本信息" name="idb_basic_information">
+                    <page string="Basic information" name="idb_basic_information">
                         <group col="4">
                             <group>
-                                <field name="detailed_type"/>
+                                <field name="material_type"/>
                                 <field name="categ_id"/>
                                 <field name="barcode"/>
                             </group>
                             <group>
+                                <field name="detailed_type"/>
+                            </group>
+                            <group>
+                                <field name="color_id"/>
                                 <field name="uom_id"/>
                                 <field name="engineering_uom_id"/>
                                 <field name="engineering_coefficient"/>
                             </group>
+<!--                            <group>-->
+<!--                                <field name="production_loss" widget="percentage"/>-->
+<!--                                <field name="purchase_loss" widget="percentage"/>-->
+<!--                                <field name="quote_loss" widget="percentage"/>-->
+<!--                            </group>-->
                             <group>
-                                <field name="production_loss" widget="percentage"/>
-                                <field name="purchase_loss" widget="percentage"/>
-                                <field name="quote_loss" widget="percentage"/>
-                            </group>
-                            <group>
+                                <field name="specification"/>
                                 <field name="reference_price"/>
                                 <field name="reference_sale_price"/>
                             </group>
@@ -60,17 +87,18 @@
         </record>
 
         <!--        产品资料-->
-        <menuitem id="menu_idb_basic_data_product"
-                  name="产品资料"
-                  parent="menu_idb_basic_data"
-                  sequence="1"/>
+<!--        <menuitem id="menu_idb_basic_data_product"-->
+<!--                  name="Product Information"-->
+<!--                  parent="menu_idb_basic_data"-->
+<!--                  sequence="1"/>-->
 
         <record id="product_search_form_view202411221058" model="ir.ui.view">
             <field name="name">product.product.search.stock.form</field>
             <field name="model">product.product</field>
             <field name="arch" type="xml">
                 <search>
-                    <field name="categ_id" enable_counters="1"/>
+                    <field name="name"/>
+                    <field name="categ_id"/>
                     <searchpanel>
                         <field name="categ_id" enable_counters="1"/>
                     </searchpanel>
@@ -79,17 +107,19 @@
         </record>
 
         <record id="idb_product_action" model="ir.actions.act_window">
-            <field name="name">产品</field>
+            <field name="name">Product</field>
             <field name="res_model">product.product</field>
             <field name="view_mode">tree,form</field>
             <field name="search_view_id" ref="idb_basic_data.product_search_form_view202411221058"/>
         </record>
 
+
+
         <!--        产品-->
-        <menuitem id="menu_idb_basic_data_product_variant"
-                  name="产品"
-                  parent="menu_idb_basic_data_product"
-                  action="idb_basic_data.idb_product_action"
-                  sequence="1"/>
+<!--        <menuitem id="menu_idb_basic_data_product_variant"-->
+<!--                  name="Product"-->
+<!--                  parent="menu_idb_basic_data_product"-->
+<!--                  action="idb_basic_data.idb_product_action"-->
+<!--                  sequence="1"/>-->
     </data>
 </odoo>

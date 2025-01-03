@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="mrp_eco_stage_view_form202412211438" model="ir.ui.view">
+            <field name="name">mrp.eco.stage.view.form</field>
+            <field name="model">mrp.eco.stage</field>
+            <field name="inherit_id" ref="mrp_plm.mrp_eco_stage_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form/sheet/group/group/field[@name='type_ids']" position="after">
+                    <field name="superiors_id" options="{'no_create': True, 'no_create_edit':True, 'no_open': True}"/>
+                    <field name="junior_id" options="{'no_create': True, 'no_create_edit':True, 'no_open': True}"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

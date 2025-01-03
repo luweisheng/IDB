@@ -1,0 +1,1238 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* idb_sample_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-20 06:11+0000\n"
+"PO-Revision-Date: 2024-12-20 06:11+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__message_needaction
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__message_needaction
+msgid "Action Needed"
+msgstr "Azione necessaria"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__activity_ids
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__activity_ids
+msgid "Activities"
+msgstr "Attività"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__activity_exception_decoration
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Decorazione di eccezione di attività"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__activity_state
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__activity_state
+msgid "Activity State"
+msgstr "Stato di attività"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__activity_type_icon
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icona del tipo di attività"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__message_attachment_count
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__message_attachment_count
+msgid "Attachment Count"
+msgstr "Conteggio degli allegati"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_et_file__bom_date
+msgid "BOM Date"
+msgstr "Data BOM"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_mrp_bom
+msgid "Bill of Material"
+msgstr "Distinta base"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__sample_score_ids
+msgid "Boilerplate score detail"
+msgstr "Dettagli del punteggio standard"
+
+#. module: idb_sample_management
+#. odoo-python
+#: code:addons/idb_sample_management/models/mrp_bom.py:0
+#, python-format
+msgid "Bom"
+msgstr "Buono"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__bom_count
+msgid "Bom quantity"
+msgstr "Quantità Bom"
+
+#. module: idb_sample_management
+#: model:ir.model.fields.selection,name:idb_sample_management.selection__idb_sample_management__state__cancel
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.idb_development_schedule_form
+msgid "Cancel"
+msgstr "Cancellare"
+
+#. module: idb_sample_management
+#: model:ir.model.constraint,message:idb_sample_management.constraint_product_category_name_uniq
+msgid "Category names must be unique"
+msgstr "I nomi delle categorie devono essere univoci"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_idb_reject_reason
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_reject_reason__name
+msgid "Cause of rejection"
+msgstr "Causa del rifiuto"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__customer_number
+msgid "Client number"
+msgstr "Numero cliente"
+
+#. module: idb_sample_management
+#: model:ir.ui.menu,name:idb_sample_management.menu_template_configuration
+msgid "Color matching template"
+msgstr "Modello di abbinamento colori"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_res_company
+msgid "Companies"
+msgstr "Aziende"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_idb_create_product_template
+msgid "Create a Product Template"
+msgstr "Crea un modello di prodotto"
+
+#. module: idb_sample_management
+#. odoo-python
+#: code:addons/idb_sample_management/models/sample_management.py:0
+#, python-format
+msgid "Create product"
+msgstr "Crea prodotto"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_abnormal_problem_record__create_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_abnormal_problem_record_type__create_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_customer_comment__create_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_develop_type__create_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_development_schedule__create_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_et_file__create_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_bom__create_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_no_position_line__create_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_position_line__create_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_quote_line__create_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_reject_reason__create_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__create_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management_line__create_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_score__create_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_score_line__create_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_mrp_bom_no_part_detail__create_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_mrp_bom_part_detail__create_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__create_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template_line__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_abnormal_problem_record__create_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_abnormal_problem_record_type__create_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_customer_comment__create_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_develop_type__create_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_development_schedule__create_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_et_file__create_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_bom__create_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_no_position_line__create_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_position_line__create_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_quote_line__create_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_reject_reason__create_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__create_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management_line__create_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_score__create_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_score_line__create_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_mrp_bom_no_part_detail__create_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_mrp_bom_part_detail__create_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__create_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template_line__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__customer_factory_number
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_form
+msgid "Customer account number"
+msgstr "Numero di conto cliente"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_idb_customer_comment
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__customer_comment_ids
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_form
+msgid "Customer comments"
+msgstr "Commenti dei clienti"
+
+#. module: idb_sample_management
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_search_view
+msgid "Default category grouping"
+msgstr "Raggruppamento di categorie predefinito"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__delivery_date
+msgid "Delivery date"
+msgstr "Data di consegna"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__description
+msgid "Description"
+msgstr "Descrizione"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__develop_date
+msgid "Development date"
+msgstr "Data di sviluppo"
+
+#. module: idb_sample_management
+#: model:ir.ui.menu,name:idb_sample_management.menu_sample_management_order
+msgid "Development document"
+msgstr "Documento di sviluppo"
+
+#. module: idb_sample_management
+#: model:ir.model.fields.selection,name:idb_sample_management.selection__idb_sample_management__state__development_release_scheduled
+msgid "Development release is scheduled"
+msgstr "È prevista la versione di sviluppo"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_idb_development_schedule
+msgid "Development sample sheet"
+msgstr "Scheda campione di sviluppo"
+
+#. module: idb_sample_management
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.idb_development_schedule_form
+msgid "Development schedule"
+msgstr "Programma di sviluppo"
+
+#. module: idb_sample_management
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.template_configuration_form
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.template_configuration_tree
+msgid "Development template"
+msgstr "Modello di sviluppo"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_idb_develop_type
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__develop_type_id
+msgid "Development type"
+msgstr "Tipo di sviluppo"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_abnormal_problem_record__display_name
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_abnormal_problem_record_type__display_name
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_customer_comment__display_name
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_develop_type__display_name
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_development_schedule__display_name
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_et_file__display_name
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_bom__display_name
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_no_position_line__display_name
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_position_line__display_name
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_quote_line__display_name
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_reject_reason__display_name
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__display_name
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management_line__display_name
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_score__display_name
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_score_line__display_name
+#: model:ir.model.fields,field_description:idb_sample_management.field_mrp_bom_no_part_detail__display_name
+#: model:ir.model.fields,field_description:idb_sample_management.field_mrp_bom_part_detail__display_name
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__display_name
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template_line__display_name
+msgid "Display Name"
+msgstr "Nome da visualizzare"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management_line__main_color_id
+msgid "Dominant colour"
+msgstr "Colore dominante"
+
+#. module: idb_sample_management
+#: model:ir.model.fields.selection,name:idb_sample_management.selection__idb_sample_management__state__done
+msgid "Done"
+msgstr "Fatto"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_idb_et_file
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_form
+msgid "ET file"
+msgstr "file ET"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__et_file_ids
+msgid "ET file list"
+msgstr "Elenco dei file ET"
+
+#. module: idb_sample_management
+#: model:ir.model.fields.selection,name:idb_sample_management.selection__idb_sample_management__state__et
+msgid "ET out of line"
+msgstr "ET fuori linea"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_idb_abnormal_problem_record
+msgid "Exception problem log"
+msgstr "Registro dei problemi di eccezione"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__abnormal_problem_record_ids
+msgid "Exception problem log list"
+msgstr "Elenco dei registri dei problemi di eccezione"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_idb_abnormal_problem_record_type
+msgid "Exception problem record type"
+msgstr "Tipo di record del problema di eccezione"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_et_file__file
+msgid "File"
+msgstr "File"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_et_file__file_name
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_et_file__name
+msgid "Filename"
+msgstr "Nome file"
+
+#. module: idb_sample_management
+#. odoo-python
+#: code:addons/idb_sample_management/models/sample_management.py:0
+#, python-format
+msgid "Fill in the schedule content"
+msgstr "Compila il contenuto del programma"
+
+#. module: idb_sample_management
+#: model:ir.model.fields.selection,name:idb_sample_management.selection__product_category__sort_selection__finished_product
+msgid "Finished product"
+msgstr "Prodotto finito"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__message_follower_ids
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__message_follower_ids
+msgid "Followers"
+msgstr "Seguaci"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__message_partner_ids
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguaci (Partner)"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,help:idb_sample_management.field_idb_sample_management__activity_type_icon
+#: model:ir.model.fields,help:idb_sample_management.field_sample_development_single_template__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Icona Font Awesome, ad esempio fa-tasks"
+
+#. module: idb_sample_management
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_form
+msgid "General purchase order"
+msgstr "Ordine di acquisto generale"
+
+#. module: idb_sample_management
+#: model:ir.model.fields.selection,name:idb_sample_management.selection__idb_sample_management__state__material_purchase
+msgid "General stores purchasing"
+msgstr "Acquisto di negozi generali"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__has_message
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__has_message
+msgid "Has Message"
+msgstr "Ha un messaggio"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_development_schedule__leader_id
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__leader_id
+msgid "Head of the gang"
+msgstr "Capo della banda"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_abnormal_problem_record__id
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_abnormal_problem_record_type__id
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_customer_comment__id
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_develop_type__id
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_development_schedule__id
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_et_file__id
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_bom__id
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_no_position_line__id
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_position_line__id
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_quote_line__id
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_reject_reason__id
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__id
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management_line__id
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_score__id
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_score_line__id
+#: model:ir.model.fields,field_description:idb_sample_management.field_mrp_bom_no_part_detail__id
+#: model:ir.model.fields,field_description:idb_sample_management.field_mrp_bom_part_detail__id
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__id
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__name
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__activity_exception_icon
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__activity_exception_icon
+msgid "Icon"
+msgstr "Icona"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,help:idb_sample_management.field_idb_sample_management__activity_exception_icon
+#: model:ir.model.fields,help:idb_sample_management.field_sample_development_single_template__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icona per indicare un'attività eccezionale."
+
+#. module: idb_sample_management
+#: model:ir.model.fields,help:idb_sample_management.field_idb_sample_management__message_needaction
+#: model:ir.model.fields,help:idb_sample_management.field_sample_development_single_template__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Se selezionata, i nuovi messaggi richiedono la tua attenzione."
+
+#. module: idb_sample_management
+#: model:ir.model.fields,help:idb_sample_management.field_idb_sample_management__message_has_error
+#: model:ir.model.fields,help:idb_sample_management.field_idb_sample_management__message_has_sms_error
+#: model:ir.model.fields,help:idb_sample_management.field_sample_development_single_template__message_has_error
+#: model:ir.model.fields,help:idb_sample_management.field_sample_development_single_template__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Se selezionata, alcuni messaggi presentano un errore di recapito."
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__image
+msgid "Image"
+msgstr "Immagine"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management_line__note
+msgid "Instructions"
+msgstr "Istruzioni"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__message_is_follower
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__message_is_follower
+msgid "Is Follower"
+msgstr "È un seguace"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_abnormal_problem_record__write_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_abnormal_problem_record_type__write_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_customer_comment__write_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_develop_type__write_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_development_schedule__write_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_et_file__write_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_bom__write_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_no_position_line__write_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_position_line__write_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_quote_line__write_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_reject_reason__write_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__write_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management_line__write_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_score__write_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_score_line__write_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_mrp_bom_no_part_detail__write_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_mrp_bom_part_detail__write_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__write_uid
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template_line__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_abnormal_problem_record__write_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_abnormal_problem_record_type__write_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_customer_comment__write_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_develop_type__write_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_development_schedule__write_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_et_file__write_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_bom__write_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_no_position_line__write_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_position_line__write_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_product_quote_line__write_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_reject_reason__write_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__write_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management_line__write_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_score__write_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_score_line__write_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_mrp_bom_no_part_detail__write_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_mrp_bom_part_detail__write_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__write_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template_line__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: idb_sample_management
+#: model:ir.model.fields.selection,name:idb_sample_management.selection__idb_sample_management__state__main_material_purchase
+msgid "Main materials purchasing"
+msgstr "Acquisto dei materiali principali"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_development_schedule__note
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__note
+msgid "Mark"
+msgstr "Segno"
+
+#. module: idb_sample_management
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_form
+msgid "Material detail"
+msgstr "Dettaglio del materiale"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management_line__main_product_id
+msgid "Materials"
+msgstr "Materiali"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__outsourcing_partner_id
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_form
+msgid "Merchant contractor"
+msgstr "Appaltatore commerciale"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__message_has_error
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__message_has_error
+msgid "Message Delivery error"
+msgstr "Errore di recapito del messaggio"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__message_ids
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__message_ids
+msgid "Messages"
+msgstr "Messaggi"
+
+#. module: idb_sample_management
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_form
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_search_view
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_tree
+msgid "Multiple sample development orders"
+msgstr "Ordini di sviluppo di campioni multipli"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__my_activity_date_deadline
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "La mia scadenza per l'attività"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_develop_type__name
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_development_schedule__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: idb_sample_management
+#. odoo-python
+#: code:addons/idb_sample_management/models/sample_management.py:0
+#, python-format
+msgid "New"
+msgstr "Nuovo"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__activity_calendar_event_id
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Prossimo evento del calendario delle attività"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__activity_date_deadline
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Scadenza prossima attività"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__activity_summary
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__activity_summary
+msgid "Next Activity Summary"
+msgstr "Riepilogo attività successiva"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__activity_type_id
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__activity_type_id
+msgid "Next Activity Type"
+msgstr "Tipo di attività successivo"
+
+#. module: idb_sample_management
+#. odoo-python
+#: code:addons/idb_sample_management/models/sample_management.py:0
+#, python-format
+msgid ""
+"No part information and products are not filled in, do not submit the next "
+"step!"
+msgstr ""
+"Nessuna informazione parziale e i prodotti non sono compilati, non inviare "
+"il passaggio successivo!"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__message_needaction_counter
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Numero di azioni"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__message_has_error_counter
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__message_has_error_counter
+msgid "Number of errors"
+msgstr "Numero di errori"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,help:idb_sample_management.field_idb_sample_management__message_needaction_counter
+#: model:ir.model.fields,help:idb_sample_management.field_sample_development_single_template__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Numero di messaggi che richiedono un'azione"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,help:idb_sample_management.field_idb_sample_management__message_has_error_counter
+#: model:ir.model.fields,help:idb_sample_management.field_sample_development_single_template__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Numero di messaggi con errore di recapito"
+
+#. module: idb_sample_management
+#: model:ir.model.fields.selection,name:idb_sample_management.selection__idb_sample_management__state__oil_edge
+msgid "Oil edge"
+msgstr "Bordo dell'olio"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_res_company__order_template_id
+msgid "Order template"
+msgstr "Modello di ordine"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_product_category__parent_name
+msgid "Parent class"
+msgstr "Classe dei genitori"
+
+#. module: idb_sample_management
+#: model:ir.model.fields.selection,name:idb_sample_management.selection__idb_sample_management__state__parking_space
+msgid "Parking space"
+msgstr "Posto auto"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_abnormal_problem_record__responsible_person_id
+msgid "Person in charge"
+msgstr "Responsabile"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_development_schedule__plan_end_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__plan_end_date
+msgid "Planned completion date"
+msgstr "Data di completamento prevista"
+
+#. module: idb_sample_management
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_form
+msgid "Plate requirement"
+msgstr "Requisito della piastra"
+
+#. module: idb_sample_management
+#. odoo-python
+#: code:addons/idb_sample_management/models/et_file.py:0
+#, python-format
+msgid "Please upload ET file"
+msgstr "Si prega di caricare il file ET"
+
+#. module: idb_sample_management
+#. odoo-python
+#: code:addons/idb_sample_management/models/sample_management.py:0
+#, python-format
+msgid ""
+"Position information and products are not filled in, do not submit the next "
+"step!"
+msgstr ""
+"Le informazioni sulla posizione e sui prodotti non sono state compilate, non"
+" inviare il passaggio successivo!"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management_line__price
+msgid "Price"
+msgstr "Prezzo"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management_line__price_id
+msgid "Price list"
+msgstr "Listino prezzi"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_abnormal_problem_record__problem_description
+msgid "Problem description"
+msgstr "Descrizione del problema"
+
+#. module: idb_sample_management
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_form
+msgid "Problem log"
+msgstr "Registro dei problemi"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_abnormal_problem_record__problem_type_id
+msgid "Problem type"
+msgstr "Tipo di problema"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_product_template
+msgid "Product"
+msgstr "Prodotto"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_et_file__bom_id
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__bom_id
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_form
+msgid "Product BOM"
+msgstr "BOM del prodotto"
+
+#. module: idb_sample_management
+#. odoo-python
+#: code:addons/idb_sample_management/models/sample_management.py:0
+#, python-format
+msgid ""
+"Product BOM not created, do not submit next step! Please perform ET data "
+"generation BOM operation!"
+msgstr ""
+"BOM prodotto non creato, non inviare il passaggio successivo! Eseguire "
+"l'operazione BOM di generazione dati ET!"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_product_category
+msgid "Product Category"
+msgstr "Categoria di prodotto"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_product_product
+msgid "Product Variant"
+msgstr "Variante del prodotto"
+
+#. module: idb_sample_management
+#: model:ir.actions.act_window,name:idb_sample_management.product_normal_action_sell
+msgid "Product Variants"
+msgstr "Varianti del prodotto"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__category_id
+msgid "Product classification"
+msgstr "Classificazione del prodotto"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__color_id
+msgid "Product main color"
+msgstr "Colore principale del prodotto"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__series
+msgid "Product series"
+msgstr "Serie di prodotti"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__specification
+msgid "Product specification"
+msgstr "Specifiche del prodotto"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_purchase_order
+msgid "Purchase Order"
+msgstr "Ordinazione d'acquisto"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "Riga ordine di acquisto"
+
+#. module: idb_sample_management
+#. odoo-python
+#: code:addons/idb_sample_management/models/sample_management.py:0
+#, python-format
+msgid "Purchase details"
+msgstr "Dettagli di acquisto"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__purchase_count
+msgid "Purchase order quantity"
+msgstr "Quantità dell'ordine di acquisto"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__rating_ids
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__rating_ids
+msgid "Ratings"
+msgstr "Valutazioni"
+
+#. module: idb_sample_management
+#: model:ir.model.fields.selection,name:idb_sample_management.selection__product_category__sort_selection__raw_material
+msgid "Raw material"
+msgstr "Materia prima"
+
+#. module: idb_sample_management
+#. odoo-python
+#: code:addons/idb_sample_management/models/sample_management.py:0
+#, python-format
+msgid "Reason for rejection"
+msgstr "Motivo del rifiuto"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__required_content
+msgid "Required content"
+msgstr "Contenuto richiesto"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__activity_user_id
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__activity_user_id
+msgid "Responsible User"
+msgstr "Utente responsabile"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__message_has_sms_error
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Errore di recapito SMS"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_score__sample_id
+msgid "Sample"
+msgstr "Campione"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_score_line__sample_management_id
+msgid "Sample Management"
+msgstr "Gestione dei campioni"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_idb_sample_score
+msgid "Sample Score"
+msgstr "Punteggio campione"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_idb_sample_score_line
+msgid "Sample Score Line"
+msgstr "Esempio di linea di punteggio"
+
+#. module: idb_sample_management
+#: model:ir.ui.menu,name:idb_sample_management.menu_sample_management
+msgid "Sample development"
+msgstr "Sviluppo del campione"
+
+#. module: idb_sample_management
+#: model:ir.actions.act_window,name:idb_sample_management.action_sample_management_order
+msgid "Sample development sheet"
+msgstr "Scheda di sviluppo del campione"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_sample_development_single_template
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template_line__sample_development_single_template_id
+msgid "Sample development single template"
+msgstr "Sviluppo del campione modello singolo"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_sample_development_single_template_line
+msgid "Sample development single template details"
+msgstr "Dettagli del modello singolo di sviluppo del campione"
+
+#. module: idb_sample_management
+#: model:ir.model.fields.selection,name:idb_sample_management.selection__idb_sample_management__state__sample_inspection
+msgid "Sample inspection"
+msgstr "Ispezione del campione"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_matching_color_bom__sample_id
+#: model:ir.model.fields,field_description:idb_sample_management.field_mrp_bom__sample_id
+msgid "Sample list"
+msgstr "Elenco dei campioni"
+
+#. module: idb_sample_management
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.view_company_form202411181530
+msgid "Sample list management"
+msgstr "Gestione dell'elenco dei campioni"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_abnormal_problem_record__sample_management_id
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_customer_comment__sample_management_id
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management_line__sample_management_id
+#: model:ir.model.fields,field_description:idb_sample_management.field_purchase_order__sample_management_id
+#: model:ir.model.fields,field_description:idb_sample_management.field_purchase_order_line__sample_management_line_id
+msgid "Sample management"
+msgstr "Gestione dei campioni"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_idb_sample_management_line
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__sample_management_line_ids
+msgid "Sample management detail"
+msgstr "Dettaglio della gestione del campione"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_product_product__sample_order_count
+#: model:ir.model.fields,field_description:idb_sample_management.field_product_template__sample_order_count
+msgid "Sample order quantity"
+msgstr "Quantità dell'ordine campione"
+
+#. module: idb_sample_management
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.view_reject_reason_form
+msgid "Sample order rejected"
+msgstr "Ordine campione rifiutato"
+
+#. module: idb_sample_management
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.idb_sample_score_form
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_form
+msgid "Sample rating sheet"
+msgstr "Esempio di scheda di valutazione"
+
+#. module: idb_sample_management
+#. odoo-python
+#: code:addons/idb_sample_management/models/sample_management.py:0
+#, python-format
+msgid "Sample score"
+msgstr "Punteggio campione"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__plan_day
+msgid "Scheduled completion days"
+msgstr "Giorni di completamento programmati"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_development_schedule__plan_start_date
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__plan_start_date
+msgid "Scheduled start date"
+msgstr "Data di inizio programmata"
+
+#. module: idb_sample_management
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_form
+msgid "Scheduling information"
+msgstr "Informazioni sulla pianificazione"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__arrange_note
+msgid "Scheduling remarks"
+msgstr "Osservazioni sulla programmazione"
+
+#. module: idb_sample_management
+#: model:ir.model.fields.selection,name:idb_sample_management.selection__product_category__sort_selection__semi_finished_product
+msgid "Semi-finished product"
+msgstr "Prodotto semilavorato"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_et_file__sequence
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management_line__sequence
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template_line__sequence
+msgid "Serial number"
+msgstr "Numero di serie"
+
+#. module: idb_sample_management
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_form
+msgid "Shipping sample"
+msgstr "Campione di spedizione"
+
+#. module: idb_sample_management
+#: model:ir.model.fields.selection,name:idb_sample_management.selection__idb_sample_management__state__dhl
+msgid "Shipping version - DHL"
+msgstr "Versione di spedizione - DHL"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,help:idb_sample_management.field_idb_sample_management__activity_state
+#: model:ir.model.fields,help:idb_sample_management.field_sample_development_single_template__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Stato basato sulle attività\n"
+"Scaduto: la data di scadenza è già passata\n"
+"Oggi: la data dell'attività è oggi\n"
+"Pianificato: attività future."
+
+#. module: idb_sample_management
+#: model:ir.model.fields.selection,name:idb_sample_management.selection__idb_sample_management__state__stock_preparation
+msgid "Stock preparation"
+msgstr "Preparazione del brodo"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__factory_number
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_form
+msgid "Style number"
+msgstr "Numero di stile"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__sample_development_single_template_line_ids
+msgid "Template detail"
+msgstr "Dettaglio del modello"
+
+#. module: idb_sample_management
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_form
+msgid "Template score"
+msgstr "Punteggio modello"
+
+#. module: idb_sample_management
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_form
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.view_reject_reason_form
+msgid "Turn down"
+msgstr "Abbassare"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,help:idb_sample_management.field_idb_sample_management__activity_exception_decoration
+#: model:ir.model.fields,help:idb_sample_management.field_sample_development_single_template__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Tipo di attività eccezionale registrata."
+
+#. module: idb_sample_management
+#: model:ir.model.fields,help:idb_sample_management.field_idb_sample_management__customer_number
+msgid "Use a barcode to identify this contact."
+msgstr "Utilizza un codice a barre per identificare questo contatto."
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__website_message_ids
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template__website_message_ids
+msgid "Website Messages"
+msgstr "Messaggi del sito web"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,help:idb_sample_management.field_idb_sample_management__website_message_ids
+#: model:ir.model.fields,help:idb_sample_management.field_sample_development_single_template__website_message_ids
+msgid "Website communication history"
+msgstr "Cronologia delle comunicazioni del sito web"
+
+#. module: idb_sample_management
+#: model:ir.model.fields.selection,name:idb_sample_management.selection__product_category__sort_selection__accessory
+msgid "attachment"
+msgstr "allegato"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management_line__attachment_ids
+msgid "attachments"
+msgstr "allegati"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__salesperson_id
+msgid "business"
+msgstr "Attività commerciale"
+
+#. module: idb_sample_management
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_form
+msgid "cancel"
+msgstr "cancellare"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management_line__accessory_id
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template_line__accessory_id
+msgid "category"
+msgstr "categoria"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__customer_id
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_search_view
+msgid "client"
+msgstr "cliente"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_abnormal_problem_record_type__code
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_develop_type__code
+msgid "code"
+msgstr "codice"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_customer_comment__comment
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_score__comment
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_score_line__comment
+msgid "comment"
+msgstr "commento"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_customer_comment__comment_date
+msgid "comment date"
+msgstr "data del commento"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_customer_comment__comment_person_id
+msgid "comment user"
+msgstr "commento utente"
+
+#. module: idb_sample_management
+#: model:ir.model.fields.selection,name:idb_sample_management.selection__idb_sample_management__state__cutting
+msgid "cutting"
+msgstr "taglio"
+
+#. module: idb_sample_management
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.template_configuration_form
+msgid "detail"
+msgstr "dettaglio"
+
+#. module: idb_sample_management
+#: model:ir.model.fields.selection,name:idb_sample_management.selection__idb_sample_management__state__draft
+msgid "draft"
+msgstr "bozza"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_development_schedule__member_id
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__member_id
+msgid "exceptionalist"
+msgstr "eccezionalista"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_idb_product_bom
+msgid "idb.product.bom"
+msgstr "idb.prodotto.bom"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_idb_product_no_position_line
+msgid "idb.product.no.position.line"
+msgstr "idb.prodotto.no.posizione.linea"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_idb_product_position_line
+msgid "idb.product.position.line"
+msgstr "idb.prodotto.posizione.linea"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_idb_product_quote_line
+msgid "idb.product.quote.line"
+msgstr "idb.prodotto.citazione.linea"
+
+#. module: idb_sample_management
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_form
+msgid "main purchase"
+msgstr "acquisto principale"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_score__score
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_score_line__score
+msgid "mark"
+msgstr "segno"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_mrp_bom_no_part_detail
+msgid "mrp.bom.no.part.detail"
+msgstr "mrp.bom.no.part.dettaglio"
+
+#. module: idb_sample_management
+#: model:ir.model,name:idb_sample_management.model_mrp_bom_part_detail
+msgid "mrp.bom.part.detail"
+msgstr "mrp.bom.part.dettaglio"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_abnormal_problem_record_type__name
+msgid "name"
+msgstr "nome"
+
+#. module: idb_sample_management
+#: model:ir.model.fields.selection,name:idb_sample_management.selection__product_category__sort_selection__other
+msgid "other"
+msgstr "altro"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__is_outsourcing
+msgid "outsource"
+msgstr "esternalizzare"
+
+#. module: idb_sample_management
+#: model:ir.model.fields.selection,name:idb_sample_management.selection__idb_sample_management__state__plate_making
+msgid "plate-making"
+msgstr "fabbricazione di lastre"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__price
+msgid "price"
+msgstr "prezzo"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__quantity
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management_line__product_qty
+msgid "quantity"
+msgstr "quantità"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_score__grade
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_score_line__grade
+msgid "rate"
+msgstr "valutare"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_abnormal_problem_record__note
+msgid "remark"
+msgstr "osservazione"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management_line__is_required
+#: model:ir.model.fields,field_description:idb_sample_management.field_sample_development_single_template_line__is_required
+msgid "required"
+msgstr "necessario"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_et_file__sample_id
+msgid "sample"
+msgstr "campione"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_customer_comment__score
+msgid "score"
+msgstr "punto"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_product_category__sort_selection
+msgid "sort"
+msgstr "ordinare"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__state
+msgid "status"
+msgstr "stato"
+
+#. module: idb_sample_management
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.idb_sample_score_form
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_form
+msgid "submit"
+msgstr "invia"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management_line__partner_id
+msgid "supplier"
+msgstr "fornitore"
+
+#. module: idb_sample_management
+#: model:ir.model.fields.selection,name:idb_sample_management.selection__idb_sample_management__state__table
+msgid "table"
+msgstr "tavolo"
+
+#. module: idb_sample_management
+#: model:ir.actions.act_window,name:idb_sample_management.action_template_configuration
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__order_template_id
+#: model_terms:ir.actions.act_window,help:idb_sample_management.action_template_configuration
+msgid "template"
+msgstr "modello"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management_line__product_uom_id
+msgid "unit"
+msgstr "unità"
+
+#. module: idb_sample_management
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.idb_development_schedule_form
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.sample_management_form
+msgid "verify"
+msgstr "verificare"
+
+#. module: idb_sample_management
+#. odoo-python
+#: code:addons/idb_sample_management/models/sample_management.py:0
+#, python-format
+msgid "{}No supplier! Submission prohibited!"
+msgstr "{}Nessun fornitore! Invio vietato!"
+
+#. module: idb_sample_management
+#. odoo-python
+#: code:addons/idb_sample_management/models/sample_management.py:0
+#, python-format
+msgid "{}Not filled! Prohibit submission！"
+msgstr "{}Non compilato! Vietato l'invio!"
+
+#. module: idb_sample_management
+#: model:ir.model.fields,field_description:idb_sample_management.field_idb_sample_management__name
+msgid "单号"
+msgstr "Occupato"
+
+#. module: idb_sample_management
+#: model_terms:ir.ui.view,arch_db:idb_sample_management.view_template_property_form202412191613
+msgid "样品单数量"
+msgstr "样品单数量"

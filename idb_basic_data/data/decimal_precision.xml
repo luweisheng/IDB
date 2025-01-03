@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="accuracy_stock_keeping_unit" model="decimal.precision">
+            <field name="name">Stock Unit</field>
+            <field name="digits" eval="7"/>
+        </record>
+
+        <record id="length_unit" model="decimal.precision">
+            <field name="name">Length Unit</field>
+            <field name="digits" eval="3"/>
+        </record>
+
+        <record id="width_unit" model="decimal.precision">
+            <field name="name">Width Unit</field>
+            <field name="digits" eval="3"/>
+        </record>
+    </data>
+</odoo>

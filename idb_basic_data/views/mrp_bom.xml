@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="seq_idb_mrp_bom" model="ir.sequence">
+        <field name="name">BOM Number</field>
+        <field name="code">mrp.bom</field>
+        <field name="prefix">BOM</field>
+        <field name="padding">5</field>
+        <field name="company_id" eval="False"/>
+    </record>
+
+    <record id="idb_mrp_bom_form_view" model="ir.ui.view">
+        <field name="name">Product bom</field>
+        <field name="model">mrp.bom</field>
+        <field name="inherit_id" ref="mrp.mrp_bom_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="before">
+                <header>
+                    <button name="batch_modification_color_matching_materials" string="Batch modification of color matching materials"
+                        type="object" class="btn-primary"/>
+                </header>
+
+            </xpath>
+            <xpath expr="//sheet/div[@name='button_box']" position="before">
+                <div class="oe_title">
+                    <h1>
+                        <div class="d-flex">
+                            <field class="text-break" name="name" widget="text"
+                                   readonly="True" force_save="1"/>
+                        </div>
+                    </h1>
+                </div>
+            </xpath>
+            <xpath expr="//sheet/notebook/page[@name='components']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//sheet/group[1]" position="replace">
+                <group col="4">
+                    <group>
+                        <field name="active" invisible="1"/>
+                        <field name="company_id" invisible="1"/>
+                        <field name="product_tmpl_id" context="{'default_detailed_type': 'product'}" invisible="1"/>
+                        <field name="product_uom_category_id" invisible="1"/>
+                        <field name="allow_operation_dependencies" invisible="1"/>
+                        <field name="product_id" groups="product.group_product_variant" invisible="1"
+                               context="{'default_detailed_type': 'product'}"/>
+                        <field name="product_id" groups="!product.group_product_variant" invisible="1"/>
+
+                        <field name="customer_id"/>
+                        <field name="customer_number"/>
+                        <field name="main_color_id"/>
+                        <field name="match_color_id"/>
+                        <label for="product_qty" string="Quantity"/>
+                        <div class="o_row">
+                            <field name="product_qty"/>
+                            <field name="product_uom_id" options="{'no_open':True,'no_create':True}"
+                                   groups="uom.group_uom"/>
+                        </div>
+                    </group>
+                    <group>
+                        <field name="code" invisible="1"/>
+
+                        <p colspan="2" class="oe_grey oe_edit_only" invisible="1">
+                            <ul>
+                                A BoM of type Kit is not produced with a manufacturing order.
+                                <br/>
+                                Instead, it is used to decompose a BoM into its components when:
+                                <li>
+                                    it is added as a component in a manufacturing order
+                                </li>
+                                <li>
+                                    it is moved via a transfer, such as a receipt or a delivery order for instance.
+                                </li>
+                            </ul>
+                        </p>
+                        <field name="company_id" groups="base.group_multi_company"
+                               options="{'no_create': True, 'no_open': True}"
+                               invisible="1"/>
+                        <field name="product_tmpl_id"/>
+                        <field name="category_id"/>
+                        <field name="material_id"/>
+                        <field name="barcode"/>
+                        <field name="type" invisible="context.get('parent_production_id')"/>
+                    </group>
+                    <group>
+                        <field name="grid_number"/>
+                        <field name="factory_number"/>
+                        <field name="factory_version"/>
+                        <field name="estimate_quantity"/>
+                    </group>
+                    <group class="o_row">
+                        <field name="image1" widget="image_preview" nolabel="1" class="oe_avatar"
+                               options="{'size': [120, 120]}"/>
+                        <field name="image2" widget="image_preview" nolabel="1" class="oe_avatar"
+                               options="{'size': [120, 120]}"/>
+                        <field name="image3" widget="image_preview" nolabel="1" class="oe_avatar"
+                               options="{'size': [120, 120]}"/>
+                    </group>
+                </group>
+            </xpath>
+            <xpath expr="//sheet/notebook/page[@name='components']" position="before">
+                <page string="Position data">
+                    <field name="partial_detail_ids">
+                        <tree editable="1">
+                            <field name="company_id" column_invisible="1"/>
+                            <field name="product_uom_category_id" column_invisible="1"/>
+                            <field name="fit_type"/>
+                            <!--                                        <field name="category_id"/>-->
+                            <field name="accessory_id"/>
+                            <field name="barcode"/>
+                            <!--                                        <field name="product_id" string="物料名称" context="{'search_view_ref': 'idb_sample_management.product_search_form_view202411191646'}"/>-->
+                            <field name="product_id"/>
+                            <field name="material_type" optional="hide"/>
+                            <field name="specification"/>
+                            <field name="color_id"/>
+                            <field name="position"/>
+                            <field name="length"/>
+                            <field name="width"/>
+                            <field name="check" optional="hide"/>
+                            <field name="production_add_loss" widget="percentage"/>
+                            <!--                                        <field name="single_use"/>-->
+                            <!--                                        <field name="stock_use"/>-->
+                            <field name="knife_type"/>
+                            <field name="knife_count"/>
+                            <field name="knife_use"/>
+                            <field name="partial_detail_stock_use"/>
+                            <field name="material_width"/>
+                            <field name="material_length"/>
+                            <field name="residue_width"/>
+                            <field name="residue_length"/>
+                            <field name="engineering_coefficient"/>
+                            <field name="count_material"/>
+                            <field name="process_type"/>
+                            <field name="match_sequence" optional="hide"/>
+                            <field name="note"/>
+                        </tree>
+                    </field>
+                </page>
+                <page string="Location-free data">
+                    <field name="no_bom_line_ids">
+                        <tree editable="1">
+                            <!--                                        <field name="category_id"/>-->
+                            <field name="company_id" column_invisible="1"/>
+                            <field name="product_uom_category_id" column_invisible="1"/>
+                            <field name="accessory_id"/>
+                            <field name="barcode"/>
+                            <field name="product_id"/>
+                            <field name="material_type"/>
+                            <field name="specification"/>
+                            <field name="color_id"/>
+                            <field name="engineering_uom_id"/>
+                            <field name="product_uom_id"/>
+                            <field name="product_qty"/>
+                            <field name="check" optional="hide"/>
+                            <field name="engineering_coefficient"/>
+                            <field name="production_quantity"/>
+                            <field name="note"/>
+                        </tree>
+                    </field>
+                </page>
+                <page string="BOM details">
+                    <button type="object" name="update_bom_line" string="Refresh BOM details"
+                            class="btn-primary fa fa-refresh"/>
+                    <field name="bom_line_ids">
+                        <tree editable="bottom">
+                            <field name="company_id" column_invisible="1"/>
+                            <field name="product_uom_category_id" column_invisible="1"/>
+                            <field name="accessory_id"/>
+                            <field name="color_id"/>
+                            <field name="barcode"/>
+                            <field name="product_id"/>
+                            <field name="product_uom_id"/>
+                            <field name="product_qty"/>
+                            <field name="note"/>
+                        </tree>
+                    </field>
+                </page>
+<!--                <page string="颜色搭配">-->
+<!--                    <div class="o_statusbar_buttons d-flex align-items-center align-content-around flex-wrap gap-1">-->
+<!--                        <button type="object" name="set_color_table" string="获取配色项目"-->
+<!--                                class="btn-primary fa fa-recycle"/>-->
+<!--                        <button type="object" name="generate_color_matching_bom" string="生成配色BOM"-->
+<!--                                class="btn-primary fa fa-plus ml-10"/>-->
+<!--                    </div>-->
+<!--                    <field name="color_line_ids" context="{'bom_id': id, 'one2many_copy': True}"-->
+<!--                           widget="nested_one2many_list">-->
+<!--                        <tree editable="bottom">-->
+<!--                            <field name="main_color_id"/>-->
+<!--                            <field name="color_id"/>-->
+<!--                            <field name="color_line_ids" widget="nested_one2many_list">-->
+<!--                                <tree editable="1">-->
+<!--                                    <field name="accessory_id"/>-->
+<!--                                    <field name="color_id"/>-->
+<!--                                </tree>-->
+<!--                            </field>-->
+<!--                            <field name="matching_color_bom_id"/>-->
+<!--                        </tree>-->
+<!--                    </field>-->
+<!--                </page>-->
+            </xpath>
+        </field>
+    </record>
+
+    <record id="idb_mrp_bom_tree_view" model="ir.ui.view">
+        <field name="name">Product BOM</field>
+        <field name="model">mrp.bom</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="customer_id"/>
+                <field name="customer_number"/>
+                <field name="product_id"/>
+                <field name="category_id"/>
+                <field name="material_id"/>
+                <field name="barcode"/>
+                <field name="grid_number"/>
+                <field name="factory_number"/>
+                <field name="factory_version"/>
+            </tree>
+        </field>
+    </record>
+
+    <!--        action_idb_bom-->
+    <record id="action_idb_bom" model="ir.actions.act_window">
+        <field name="name">Product BOM</field>
+        <field name="res_model">mrp.bom</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+<!--    <menuitem id="menu_idb_bom_data"-->
+<!--              name="Product BOM"-->
+<!--              parent="menu_idb_basic_data"-->
+<!--              action="action_idb_bom"-->
+<!--              sequence="4"/>-->
+</odoo>

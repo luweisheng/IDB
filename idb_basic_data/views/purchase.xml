@@ -3,10 +3,10 @@
     <data>
 <!--        purchase_order_line_tree-->
         <record id="idb_purchase_order_line_tree" model="ir.ui.view">
-            <field name="name">采购明细</field>
+            <field name="name">Purchase details</field>
             <field name="model">purchase.order.line</field>
             <field name="arch" type="xml">
-                <tree string="采购明细">
+                <tree string="Purchase details">
                     <field name="order_id"/>
                     <field name="partner_id"/>
                     <field name="category_id"/>
@@ -21,14 +21,14 @@
 
         <!--        action_idb_purchase_order_line-->
         <record id="action_idb_purchase_order_line" model="ir.actions.act_window">
-            <field name="name">采购明细</field>
+            <field name="name">Purchase details</field>
             <field name="res_model">purchase.order.line</field>
             <field name="view_mode">tree</field>
         </record>
 
         <!--    purchase_order_line_menu-->
         <menuitem id="menu_idb_purchase_order_line"
-                  name="采购明细"
+                  name="Purchase details"
                   parent="purchase.menu_procurement_management"
                   action="action_idb_purchase_order_line"
                   sequence="3"/>

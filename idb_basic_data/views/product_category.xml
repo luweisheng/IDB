@@ -2,22 +2,70 @@
 <odoo>
     <data>
         <!--        产品类别menu-->
-        <menuitem id="menu_idb_basic_data_product_category"
-                  name="类别"
-                  parent="menu_idb_basic_data_product"
-                  action="product.product_category_action_form"
-                  sequence="2"/>
+<!--        <menuitem id="menu_idb_basic_data_product_category"-->
+<!--                  name="类别"-->
+<!--                  parent="menu_idb_basic_data_product"-->
+<!--                  action="product.product_category_action_form"-->
+<!--                  sequence="2"/>-->
 
         <record id="product_category_form_view202411181634" model="ir.ui.view">
-            <field name="name">类别form</field>
+            <field name="name">category form</field>
             <field name="model">product.category</field>
             <field name="inherit_id" ref="product.product_category_form_view"/>
             <field name="arch" type="xml">
                 <field name="parent_id" position="after">
                     <field name="barcode"/>
-                    <field name="po_uom_id"/>
+                    <field name="customs_code"/>
                     <field name="uom_id"/>
+                    <field name="eng_uom_id"/>
+                    <field name="po_uom_id"/>
                 </field>
+                <xpath expr="//sheet" position="inside">
+                    <notebook>
+                        <page string="Sorting loss">
+                            <field name="material_loss_ids">
+                                <tree editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="start_qty" width="30%"/>
+                                    <field name="end_qty" width="30%"/>
+                                    <field name="loss_rate" widget="percentage" width="30%"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="product_category_search_view202411181641" model="ir.ui.view">
+            <field name="name">category search</field>
+            <field name="model">product.category</field>
+            <field name="inherit_id" ref="product.product_category_search_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//search" position="inside">
+<!--                    <searchpanel>-->
+<!--                        <field name="name" enable_counters="0"/>-->
+<!--                    </searchpanel>-->
+                    <group expand="0" string="Default category grouping">
+                        <filter name="name" string="sort" domain="[]"
+                                context="{'group_by': 'name'}"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="product_category_list_view202411181641" model="ir.ui.view">
+            <field name="name">category tree</field>
+            <field name="model">product.category</field>
+            <field name="inherit_id" ref="product.product_category_list_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//tree" position="attributes">
+                    <attribute name="default_order">barcode</attribute>
+                </xpath>
+                <xpath expr="//field[@name='display_name']" position="before">
+                    <field name="parent_id"/>
+                    <!--                    <field name="sort_selection"/>-->
+                </xpath>
             </field>
         </record>
     </data>

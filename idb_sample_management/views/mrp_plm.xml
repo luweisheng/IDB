@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <menuitem id="menu_sample_management"
+                  name="Sample development"
+                  sequence="1"
+                  parent="mrp_plm.menu_mrp_plm_root"/>
+
+        <!--        样品管理menu-->
+        <menuitem id="menu_sample_management_order"
+                  name="Development document"
+                  parent="menu_sample_management"
+                  action="action_sample_management_order"
+                  sequence="1"/>
+
+        <!--        开发模板-->
+        <menuitem id="menu_template_configuration"
+                  name="Color matching template"
+                  parent="menu_sample_management"
+                  action="action_template_configuration"
+                  sequence="2"/>
+   </data>
+</odoo>

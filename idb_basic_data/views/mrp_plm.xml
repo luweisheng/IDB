@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+<!--        <menuitem-->
+<!--                id="menu_idb_basic_data"-->
+<!--                name="Basic data"-->
+<!--                parent="mrp_plm.menu_mrp_plm_root"-->
+<!--                sequence="1"/>-->
+
+<!--        <menuitem id="menu_idb_basic_data_product_variant"-->
+<!--                  name="Product data"-->
+<!--                  parent="mrp_plm.menu_mrp_plm_master_data"-->
+<!--                  action="idb_basic_data.idb_product_action"-->
+<!--                  sequence="1"/>-->
+
+        <menuitem id="menu_idb_basic_data_product_category"
+                  name="Product category"
+                  parent="mrp_plm.menu_mrp_plm_master_data"
+                  action="product.product_category_action_form"
+                  sequence="6"/>
+
+        <menuitem id="idb_menu_product_color_data"
+                  name="Color data"
+                  parent="mrp_plm.menu_mrp_plm_master_data"
+                  action="action_product_color"
+                  sequence="7"/>
+
+        <menuitem id="idb_menu_product_color_scheme"
+                  name="Color scheme"
+                  parent="mrp_plm.menu_mrp_plm_master_data"
+                  action="action_idb_product_color_scheme"
+                  sequence="8"/>
+
+        <menuitem id="menu_idb_product_attribute"
+                  name="Product attribute"
+                  parent="mrp_plm.menu_mrp_plm_master_data"
+                  action="idb_product_attribute_action"
+                  sequence="9"/>
+
+        <!--        产品单位menu-->
+        <menuitem id="menu_idb_basic_data_product_uom"
+                  name="Product unit"
+                  parent="mrp_plm.menu_mrp_plm_master_data"
+                  action="uom.product_uom_form_action" sequence="10"/>
+
+        <menuitem id="menu_idb_product_attribute_template"
+                  name="Product template"
+                  parent="mrp_plm.menu_mrp_plm_master_data"
+                  action="idb_product_attribute_template_action"
+                  sequence="11"/>
+
+    </data>
+</odoo>

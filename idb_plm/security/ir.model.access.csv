@@ -1,0 +1,14 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sample_development_single_template,sample_development_single_template,model_sample_development_single_template,,1,1,1,1
+access_sample_development_single_template_line,sample_development_single_template_line,model_sample_development_single_template_line,,1,1,1,1
+access_idb_develop_type,idb_develop_type,model_idb_develop_type,,1,1,1,1
+access_idb_sample_management_line,idb_sample_management_line,model_idb_sample_management_line,,1,1,1,1
+access_idb_development_schedule,idb_development_schedule,model_idb_development_schedule,,1,1,1,1
+access_idb_abnormal_problem_record_type,idb_abnormal_problem_record_type,model_idb_abnormal_problem_record_type,,1,1,1,1
+access_idb_abnormal_problem_record,idb_abnormal_problem_record,model_idb_abnormal_problem_record,,1,1,1,0
+access_idb_reject_reason,idb_reject_reason,model_idb_reject_reason,,1,1,1,0
+access_idb_et_file,idb_et_file,model_idb_et_file,,1,1,1,1
+access_idb_sample_score,idb_sample_score,model_idb_sample_score,,1,1,1,1
+access_idb_sample_score_line,idb_sample_score_line,model_idb_sample_score_line,,1,1,1,1
+access_idb_customer_comment,idb_customer_comment,model_idb_customer_comment,,1,1,1,1
+

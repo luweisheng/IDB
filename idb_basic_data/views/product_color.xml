@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+<!--        idb_product_color_tree-->
+        <record id="idb_product_color_tree" model="ir.ui.view">
+            <field name="name">idb.product.color.tree</field>
+            <field name="model">idb.product.color</field>
+            <field name="arch" type="xml">
+                <tree string="colour">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="en_name"/>
+                    <field name="note"/>
+                </tree>
+            </field>
+        </record>
+
+<!--        idb_product_color_form-->
+        <record id="idb_product_color_form" model="ir.ui.view">
+            <field name="name">idb.product.color.form</field>
+            <field name="model">idb.product.color</field>
+            <field name="arch" type="xml">
+                <form string="colour">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="code"/>
+                            <field name="en_name"/>
+                            <field name="note"/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+<!--        action_product_color-->
+        <record id="action_product_color" model="ir.actions.act_window">
+            <field name="name">colour</field>
+            <field name="res_model">idb.product.color</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+<!--        <menuitem id="idb_menu_product_color_data"-->
+<!--                  name="颜色资料"-->
+<!--                  parent="menu_idb_basic_data"-->
+<!--                  action="action_product_color"-->
+<!--                  sequence="2"/>-->
+
+    </data>
+</odoo>

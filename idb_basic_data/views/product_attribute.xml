@@ -6,13 +6,13 @@
             <field name="name">idb.product.attributeform</field>
             <field name="model">idb.product.attribute</field>
             <field name="arch" type="xml">
-                <form string="属性">
+                <form>
                     <sheet>
                         <group>
                             <field name="name"/>
                         </group>
                         <notebook>
-                            <page string="明细">
+                            <page string="Details">
                                 <field name="value_line">
                                     <tree editable="1">
                                         <field name="name"/>
@@ -30,7 +30,7 @@
             <field name="name">idb.product.attribute.tree</field>
             <field name="model">idb.product.attribute</field>
             <field name="arch" type="xml">
-                <tree string="属性">
+                <tree>
                     <field name="name"/>
                 </tree>
             </field>
@@ -38,23 +38,19 @@
 
         <!--        idb_product_attribute_action-->
         <record id="idb_product_attribute_action" model="ir.actions.act_window">
-            <field name="name">属性</field>
+            <field name="name">Attributes</field>
             <field name="res_model">idb.product.attribute</field>
             <field name="view_mode">tree,form</field>
         </record>
 
-        <menuitem id="menu_idb_product_attribute"
-                  name="属性"
-                  parent="menu_idb_basic_data_product"
-                  action="idb_product_attribute_action"
-                  sequence="4"/>
+
 
 <!--        idb_product_attribute_template_tree-->
         <record id="idb_product_attribute_template_tree" model="ir.ui.view">
             <field name="name">idb.product.attribute.template.tree</field>
             <field name="model">idb.product.attribute.template</field>
             <field name="arch" type="xml">
-                <tree string="模板">
+                <tree string="Template">
                     <field name="name"/>
                 </tree>
             </field>
@@ -65,13 +61,13 @@
             <field name="name">idb.product.attribute.template.form</field>
             <field name="model">idb.product.attribute.template</field>
             <field name="arch" type="xml">
-                <form string="模板">
+                <form string="Template">
                     <sheet>
                         <group>
                             <field name="name"/>
                         </group>
                         <notebook>
-                            <page string="明细">
+                            <page string="Details">
                                 <field name="product_attribute_line">
                                     <tree editable="1">
                                         <field name="product_attribute_id"/>
@@ -86,15 +82,10 @@
 
         <!--        idb_product_attribute_template_action-->
         <record id="idb_product_attribute_template_action" model="ir.actions.act_window">
-            <field name="name">模板</field>
+            <field name="name">Template</field>
             <field name="res_model">idb.product.attribute.template</field>
             <field name="view_mode">tree,form</field>
         </record>
 
-        <menuitem id="menu_idb_product_attribute_template"
-                  name="模板"
-                  parent="menu_idb_basic_data_product"
-                  action="idb_product_attribute_template_action"
-                  sequence="3"/>
     </data>
 </odoo>
