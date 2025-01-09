@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from odoo.tools.profiler import profile
 from odoo import models, fields, api, _
 
 

@@ -53,17 +53,15 @@
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
                 <p class="oe_view_no
-                content">template
+                content">Color matching template
                 </p>
             </field>
         </record>
 
-
-
-<!--        <menuitem id="menu_template_configuration_category"-->
-<!--                  name="类别"-->
-<!--                  parent="menu_sample_management_config"-->
-<!--                  action="product.product_category_action_form"-->
-<!--                  sequence="1"/>-->
+        <menuitem id="menu_idb_color_matching_template"
+                  name="Color matching template"
+                  parent="mrp_plm.menu_mrp_plm_master_data"
+                  action="action_template_configuration"
+                  sequence="12"/>
     </data>
 </odoo>

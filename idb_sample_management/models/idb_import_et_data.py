@@ -5,8 +5,6 @@ import xlrd
 from odoo import models, fields, api, _
 from odoo.exceptions import UserError
 
-from odoo17.other_addons.ns_excel_file_reader.models.excel_file_reader import ExcelFileReader
-
 
 class IdbImportETData(models.TransientModel):
     _name = 'idb.import.et.data'

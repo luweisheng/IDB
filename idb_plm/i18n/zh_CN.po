@@ -559,7 +559,7 @@ msgstr "计划完成日期"
 #. module: idb_plm
 #: model_terms:ir.ui.view,arch_db:idb_plm.mrp_eco_view_form202412211003
 msgid "Plate requirement"
-msgstr "板材要求"
+msgstr "制版要求"
 
 #. module: idb_plm
 #. odoo-python
@@ -642,7 +642,7 @@ msgstr "产品分类"
 #. module: idb_plm
 #: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__color_id
 msgid "Product main color"
-msgstr "产品主色调"
+msgstr "产品主色"
 
 #. module: idb_plm
 #: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__series
@@ -902,7 +902,7 @@ msgstr "附件"
 #. module: idb_plm
 #: model:ir.model.fields,field_description:idb_plm.field_mrp_eco__salesperson_id
 msgid "business"
-msgstr "商业"
+msgstr "业务员"
 
 #. module: idb_plm
 #: model:ir.model.fields,field_description:idb_plm.field_idb_sample_management_line__accessory_id
@@ -994,7 +994,7 @@ msgstr "mrp.bom.零件详细信息"
 #. module: idb_plm
 #: model:ir.model.fields,field_description:idb_plm.field_idb_abnormal_problem_record_type__name
 msgid "name"
-msgstr "姓名"
+msgstr "名称"
 
 #. module: idb_plm
 #: model:ir.model.fields.selection,name:idb_plm.selection__product_category__sort_selection__other
@@ -1069,7 +1069,7 @@ msgstr "模板"
 #. module: idb_plm
 #: model:ir.model.fields,field_description:idb_plm.field_idb_sample_management_line__product_uom_id
 msgid "unit"
-msgstr "单元"
+msgstr "单位"
 
 #. module: idb_plm
 #: model_terms:ir.ui.view,arch_db:idb_plm.idb_development_schedule_form
@@ -1094,3 +1094,8 @@ msgstr "{}未填！禁止提交！"
 #: model_terms:ir.ui.view,arch_db:idb_plm.view_template_property_form202412191613
 msgid "样品单数量"
 msgstr ""
+
+#. module: idb_plm
+#: model:ir.ui.menu,name:idb_plm.menu_idb_color_matching_template
+msgid "Color matching template"
+msgstr "配色模板"

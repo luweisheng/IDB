@@ -1,0 +1,248 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* idb_account
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-09 10:31+0000\n"
+"PO-Revision-Date: 2025-01-09 10:31+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: idb_account
+#: model_terms:ir.ui.view,arch_db:idb_account.account_journal_dashboard_kanban_view202501101049
+msgid "<span>Upload</span>"
+msgstr "<span>上传</span>"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_account_move_line__abstract
+#: model_terms:ir.ui.view,arch_db:idb_account.account_move_view_form202501091347
+msgid "Abstract"
+msgstr "摘要"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload_move_line__account_id
+msgid "Account"
+msgstr "会计科目"
+
+#. module: idb_account
+#. odoo-python
+#: code:addons/idb_account/models/account_journal_dashboard.py:0
+#: code:addons/idb_account/models/account_journal_dashboard.py:0
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload_move_line__account_move_id
+#, python-format
+msgid "Account Move"
+msgstr "帐户转移"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload_move_line__original_amount
+msgid "Amount Currency"
+msgstr "原币金额"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload__create_uid
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload_move_line__create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload__create_date
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload_move_line__create_date
+msgid "Created on"
+msgstr "创建于"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload_move_line__credit
+msgid "Credit"
+msgstr "贷方"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload__currency_id
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload_move_line__currency_id
+msgid "Currency"
+msgstr "货币"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload__partner_id
+msgid "Customer"
+msgstr "客户"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload_move_line__debit
+msgid "Debit"
+msgstr "借方"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload__display_name
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload_move_line__display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload__document_date
+msgid "Document Date"
+msgstr "出仓日期"
+
+#. module: idb_account
+#: model_terms:ir.ui.view,arch_db:idb_account.account_move_view_form202501091347
+msgid "Draft"
+msgstr "草稿"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload__due_date
+msgid "Due Date"
+msgstr "应付日期"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_account_payment_term__due_days
+msgid "Due Days"
+msgstr "到期天数"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_account_bank_statement_line__exchange_rate
+#: model:ir.model.fields,field_description:idb_account.field_account_move__exchange_rate
+#: model:ir.model.fields,field_description:idb_account.field_account_payment__exchange_rate
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload__exchange_rate
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload_move_line__exchange_rate
+msgid "Exchange Rate"
+msgstr "汇率"
+
+#. module: idb_account
+#: model_terms:ir.ui.view,arch_db:idb_account.account_move_view_form202501091347
+msgid "Exchange Rate："
+msgstr "汇率："
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload__file
+msgid "File"
+msgstr "文件"
+
+#. module: idb_account
+#: model_terms:ir.ui.view,arch_db:idb_account.idb_account_upload_form_view
+msgid "Generate Certificate"
+msgstr "生成会计凭证"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload__id
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload_move_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: idb_account
+#: model:ir.model,name:idb_account.model_idb_account_upload
+msgid "IDB Account Upload"
+msgstr "IDB账户上传"
+
+#. module: idb_account
+#: model:ir.model,name:idb_account.model_idb_account_upload_move_line
+msgid "IDB Account Upload Move Line"
+msgstr "IDB 帐户上传移动线路"
+
+#. module: idb_account
+#. odoo-python
+#: code:addons/idb_account/models/account_journal_dashboard.py:0
+#: code:addons/idb_account/models/account_journal_dashboard.py:0
+#, python-format
+msgid "Inventory Documents Generate Vouchers"
+msgstr "库存单据生成凭证"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload__invoice_line_ids
+msgid "Invoice Line"
+msgstr "发票明细"
+
+#. module: idb_account
+#: model_terms:ir.ui.view,arch_db:idb_account.account_move_view_form202501091347
+msgid "Invoice detail"
+msgstr "发票明细"
+
+#. module: idb_account
+#: model:ir.model,name:idb_account.model_account_journal
+msgid "Journal"
+msgstr "杂志"
+
+#. module: idb_account
+#: model:ir.model,name:idb_account.model_account_move
+msgid "Journal Entry"
+msgstr "日记条目"
+
+#. module: idb_account
+#: model:ir.model,name:idb_account.model_account_move_line
+msgid "Journal Item"
+msgstr "日记帐项目"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload__write_uid
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload_move_line__write_uid
+msgid "Last Updated by"
+msgstr "最后更新者"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload__write_date
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload_move_line__write_date
+msgid "Last Updated on"
+msgstr "最后更新于"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload__name
+msgid "Name"
+msgstr "姓名"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_account_bank_statement_line__original_amount
+#: model:ir.model.fields,field_description:idb_account.field_account_move__original_amount
+#: model:ir.model.fields,field_description:idb_account.field_account_payment__original_amount
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload__original_amount
+msgid "Original Amount"
+msgstr "原币金额"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload__invoice_payment_term_id
+msgid "Payment Term"
+msgstr "付款期限"
+
+#. module: idb_account
+#: model:ir.model,name:idb_account.model_account_payment_term
+msgid "Payment Terms"
+msgstr "付款条款"
+
+#. module: idb_account
+#. odoo-python
+#: code:addons/idb_account/models/account_journal_dashboard.py:0
+#, python-format
+msgid "Please upload ET file"
+msgstr "请上传 ET 文件"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload__stock_out_no
+msgid "Stock Out No"
+msgstr "出仓单号"
+
+#. module: idb_account
+#: model_terms:ir.ui.view,arch_db:idb_account.account_move_view_form202501091347
+msgid "Total Credit"
+msgstr "总学分"
+
+#. module: idb_account
+#: model_terms:ir.ui.view,arch_db:idb_account.account_move_view_form202501091347
+msgid "Total Debit"
+msgstr "借记总额"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_account_bank_statement_line__stock_picking_name
+#: model:ir.model.fields,field_description:idb_account.field_account_move__stock_picking_name
+#: model:ir.model.fields,field_description:idb_account.field_account_move_line__stock_picking_name
+#: model:ir.model.fields,field_description:idb_account.field_account_payment__stock_picking_name
+msgid "Warehouse Bill Number"
+msgstr "出仓单号"
+
+#. module: idb_account
+#: model:ir.model.fields,field_description:idb_account.field_idb_account_upload_move_line__name
+msgid "abstract"
+msgstr "摘要"

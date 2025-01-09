@@ -4,6 +4,12 @@ from odoo import models, fields, api, _
 from odoo.exceptions import UserError
 
 
+# class MrpEcoType(models.Model):
+#     _inherit = "mrp.eco.type"
+#
+#     eco_type = fields.Selection(selection_add=[('Sample development', 'Sample')])
+
+
 class IdbDevelopType(models.Model):
     _name = 'idb.develop.type'
     _description = 'Development type'

@@ -1,0 +1,72 @@
+<odoo>
+    <record id="view_payment_term_form202501091804" model="ir.ui.view">
+        <field name="model">account.payment.term</field>
+        <field name="name">view.sii.payment.term.form</field>
+        <field name="inherit_id" ref="account.view_payment_term_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="due_days"/>
+            </xpath>
+        </field>
+    </record>
+
+
+    <record id="account_journal_dashboard_kanban_view202501101049" model="ir.ui.view">
+        <field name="name">account.journal.dashboard.kanban</field>
+        <field name="model">account.journal</field>
+        <field name="inherit_id" ref="account.account_journal_dashboard_kanban_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//t[@t-name='JournalBodySalePurchase']/div/t/button[@name='action_create_new']"
+                   position="before">
+                <button id="new_misc_entry_button" type="object" name="action_create_sale_account_move"
+                        class="btn btn-primary"
+                        groups="account.group_account_invoice">
+                    <span>Upload</span>
+                </button>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="idb_account_upload_form_view" model="ir.ui.view">
+        <field name="name">idb.account.upload.form</field>
+        <field name="model">idb.account.upload</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+
+                        <group>
+                            <field name="file"/>
+                            <field name="stock_out_no"/>
+                            <field name="partner_id"/>
+                            <field name="document_date"/>
+                            <field name="due_date"/>
+                        </group>
+                        <group>
+                            <field name="invoice_payment_term_id"/>
+                            <field name="currency_id"/>
+                            <field name="exchange_rate"/>
+                            <field name="original_amount"/>
+                        </group>
+                    </group>
+                    <field name="invoice_line_ids" widget="one2many_list" readonly="1" force_save="1">
+                        <tree>
+                            <field name="name"/>
+                            <field name="account_id"/>
+                            <field name="currency_id"/>
+                            <field name="original_amount"/>
+                            <field name="exchange_rate"/>
+                            <field name="debit"/>
+                            <field name="credit"/>
+                        </tree>
+                    </field>
+                    <button name="action_generate_voucher" string="Generate Certificate" type="object"
+                            class="btn-primary w-100"/>
+                </sheet>
+                <footer/>
+            </form>
+        </field>
+    </record>
+
+
+</odoo>

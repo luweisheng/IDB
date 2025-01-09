@@ -12,9 +12,15 @@
                             <group>
                                 <field name="order_template_id"/>
                             </group>
-                            <group></group>
-                            <group></group>
-                            <group></group>
+                            <group>
+                                <field name="cg_user_id"/>
+                            </group>
+                            <group>
+
+                            </group>
+                            <group>
+
+                            </group>
                         </group>
                     </page>
 

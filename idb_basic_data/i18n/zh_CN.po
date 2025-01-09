@@ -387,7 +387,7 @@ msgstr "颜色项目名称"
 #: model:ir.model.fields,field_description:idb_basic_data.field_partial_detail_line__accessory_id
 #: model:ir.ui.menu,name:idb_basic_data.idb_menu_product_color_scheme
 msgid "Color scheme"
-msgstr "配色方案"
+msgstr "配色类别"
 
 #. module: idb_basic_data
 #: model:ir.model.fields,field_description:idb_basic_data.field_idb_mrp_bom_color_line__bom_color_id
@@ -1914,7 +1914,7 @@ msgstr "它是通过转移来移动的，例如收据或交货单。"
 #. module: idb_basic_data
 #: model:ir.model.fields.selection,name:idb_basic_data.selection__product_template__material_type__material
 msgid "material"
-msgstr "材料"
+msgstr "材质"
 
 #. module: idb_basic_data
 #: model:ir.model.fields,field_description:idb_basic_data.field_batch_modification_color_matching_materials_line__product_id

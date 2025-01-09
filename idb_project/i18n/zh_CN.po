@@ -1,0 +1,53 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* idb_project
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-06 06:44+0000\n"
+"PO-Revision-Date: 2025-01-06 06:44+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: idb_project
+#: model:ir.model.fields,field_description:idb_project.field_project_project__category_id
+msgid "Bag Category"
+msgstr "包袋类别"
+
+#. module: idb_project
+#: model:ir.model.fields,field_description:idb_project.field_project_project__cg_user_id
+msgid "CG Leader"
+msgstr "出格组长"
+
+
+#. module: idb_project
+#: model:ir.model.fields,field_description:idb_project.field_project_project__client_id
+msgid "Customer"
+msgstr "客户"
+
+#. module: idb_project
+#: model:ir.model.fields,field_description:idb_project.field_project_project__client_attachment_ids
+msgid "Customer file"
+msgstr "客户文件"
+
+#. module: idb_project
+#: model:ir.model.fields,field_description:idb_project.field_project_project__client_requirement
+#: model_terms:ir.ui.view,arch_db:idb_project.project_project_view_form202501061337
+msgid "Customer requirement"
+msgstr "客户要求"
+
+#. module: idb_project
+#: model:ir.model.fields,field_description:idb_project.field_project_project__name
+msgid "Name"
+msgstr "名称"
+
+#. module: idb_project
+#: model:ir.model,name:idb_project.model_project_project
+msgid "Project"
+msgstr "项目"
