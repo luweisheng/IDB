@@ -6,38 +6,12 @@
             <field name="model">account.move</field>
             <field name="inherit_id" ref="account.view_move_form"/>
             <field name="arch" type="xml">
-                <!--                <xpath expr="//page[@id='invoice_tab']/field[@name='invoice_line_ids']/tree/field[@name='name']" position="before">-->
-                <!--                    <field name="stock_picking_name"/>-->
-                <!--                </xpath>-->
-                <!--                <xpath expr="//page[@id='invoice_tab']/field[@name='invoice_line_ids']/tree/field[@name='name']" position="attributes">-->
-                <!--                    <attribute name="optional">hide</attribute>-->
-                <!--                    <attribute name="string">Abstract</attribute>-->
-                <!--                </xpath>-->
-                <!--                <xpath expr="//page[@id='invoice_tab']" position="attributes">-->
-                <!--                    <attribute name="invisible">1</attribute>-->
-                <!--                </xpath>-->
-                <!--                <xpath expr="//page[@id='aml_tab']" position="attributes">-->
-                <!--                    <attribute name="invisible">1</attribute>-->
-                <!--                </xpath>-->
                 <xpath expr="//div[hasclass('oe_title')]" position="replace">
                     <h1>
                         <field name="name" invisible="name == '/' and not posted_before and not quick_edit_mode"
                                readonly="state != 'draft'" placeholder="Draft"/>
                     </h1>
                 </xpath>
-<!--                <xpath expr="//div[@name='due_date']" position="attributes">-->
-<!--                    <attribute name="invisible">1</attribute>-->
-<!--                </xpath>-->
-<!--                <xpath expr="//div[@name='due_date']" position="after">-->
-<!--                    <field name="invoice_date_due" force_save="1"-->
-<!--                                           placeholder="Date"-->
-<!--                                           invisible="invoice_payment_term_id"/>-->
-<!--                    <field name="invoice_payment_term_id"-->
-<!--                                           context="{'example_date': invoice_date, 'example_amount': tax_totals['amount_total']}"-->
-<!--                                           placeholder="Payment Terms"-->
-<!--                                           options="{'no_quick_create':True}" readonly="state in ['cancel', 'posted']"/>-->
-
-<!--                </xpath>-->
                 <xpath expr="//div[@name='journal_div']" position="attributes">
                     <attribute name="invisible">1</attribute>
                 </xpath>
@@ -49,17 +23,17 @@
                 </xpath>
                 <xpath expr="//group[@id='header_left_group']/field[@name='partner_shipping_id']" position="after">
                     <field name="stock_picking_name"/>
-<!--                    <field name="journal_id"/>-->
                     <field name="original_amount"/>
                     <label for="currency_id"/>
                     <div class="o_row">
                         <field name="currency_id" class="o_column"/>
-                        Exchange Rate：<field name="exchange_rate" class="o_column"/>
+                        Exchange Rate：
+                        <field name="exchange_rate" class="o_column"/>
                     </div>
                 </xpath>
                 <xpath expr="//page[@id='invoice_tab']" position="before">
                     <page id="idb_account_move_line" string="Invoice detail">
-                        <field name="line_ids">
+                        <field name="line_ids" readonly="1">
                             <tree editable="bottom" default_order="debit desc">
                                 <field name="tax_line_id" column_invisible="True"/>
                                 <field name="company_currency_id" column_invisible="True"/>
@@ -76,6 +50,36 @@
                             </tree>
                         </field>
                     </page>
+                    <page string="GT Stock Data">
+                        <field name="gt_stock_move_ids" widget="one2many_list" readonly="1"
+                               force_save="1">
+                            <tree>
+                                <field name="stock_out_no"/>
+                                <field name="document_date"/>
+                                <field name="order_date"/>
+                                <field name="delivery_date"/>
+<!--                                <field name="partner_id"/>-->
+<!--                                <field name="user_name"/>-->
+<!--                                <field name="currency_id"/>-->
+<!--                                <field name="exchange_rate"/>-->
+<!--                                <field name="invoice_payment_term_id"/>-->
+                                <field name="order_no"/>
+                                <field name="style_no"/>
+                                <field name="material_name"/>
+                                <field name="material_category"/>
+                                <field name="quantity"/>
+                                <field name="unit"/>
+                                <field name="price_unit"/>
+                                <field name="total_value_tax"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+                <xpath expr="//page[@id='invoice_tab']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//page[@id='aml_tab']" position="attributes">
+                    <attribute name="invisible">1</attribute>
                 </xpath>
             </field>
         </record>

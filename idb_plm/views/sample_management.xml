@@ -230,14 +230,5 @@
                 </search>
             </field>
         </record>
-
-        <!--        action_sample_management_order-->
-<!--        <record id="action_sample_management_order" model="ir.actions.act_window">-->
-<!--            <field name="name">Sample development sheet</field>-->
-<!--            <field name="res_model">idb.sample.management</field>-->
-<!--            <field name="view_mode">tree,form</field>-->
-<!--            <field name="search_view_id" ref="sample_management_search_view"/>-->
-<!--        </record>-->
-
     </data>
 </odoo>
